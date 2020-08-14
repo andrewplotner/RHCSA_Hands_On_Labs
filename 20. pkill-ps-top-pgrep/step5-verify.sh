@@ -1,0 +1,1 @@
+IN=$(ps axo pid,comm,nice | grep bash | grep 19 | cut -d" " -f16) && [[ $IN == 19 ]] || echo done  

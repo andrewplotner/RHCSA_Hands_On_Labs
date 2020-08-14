@@ -1,0 +1,32 @@
+{
+    "title": "17. MBR / GPT / and Persistence ",
+    "description": "Practice with MBR and GPT and learn persistence",
+    "noindex": true,
+    "details": {
+        "steps": [
+            {
+                "title": "Step 1 - MBR and GPT",
+                "text": "step1.md",
+                "answer": "step1-answer.md"
+            },
+            {
+                "title": "Step 2 - create and mount a file system",
+                "text": "step2.md",
+                "answer": "step2-answer.md"
+            },
+            {
+                "title": "Step 3 - Make that mount persistent",
+                "text": "step3.md",
+                "answer": "step3-answer.md",
+                "verify": "step3-verify.sh"
+            }
+        ]
+    },
+    "environment": {
+        "hideintro": true,
+        "uilayout": "terminal"
+    },
+    "backend": {
+        "imageid": "ubuntu:1804"
+    }
+}

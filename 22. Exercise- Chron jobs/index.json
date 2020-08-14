@@ -1,0 +1,36 @@
+{
+    "title": "22: Exercise- Chron ",
+    "description": "Learn how to schedule system actions",
+    "noindex": true,
+    "details": {
+        "steps": [
+            {
+                "title": "Step 1 - working with at",
+                "text": "step1.md",
+                "answer": "step1-answer.md"
+            },
+            {
+                "title": "Step 2 - manipulating at jobs",
+                "text": "step2.md",
+                "answer": "step2-answer.md"
+            },
+            {
+                "title": "Step 3 - anacron",
+                "text": "step3.md",
+                "answer": "step3-answer.md"
+            },
+            {
+                "title": "Step 4 - cron jobs",
+                "text": "step4.md",
+                "answer": "step4-answer.md"
+            }
+        ]
+    },
+    "environment": {
+        "hideintro": true,
+        "uilayout": "terminal"
+    },
+    "backend": {
+        "imageid": "ubuntu:2004"
+    }
+}

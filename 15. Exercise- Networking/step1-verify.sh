@@ -1,0 +1,1 @@
+OUT=$( cat /etc/hostname ) && [[ $OUT == "myserver.domain.com" ]] && echo done

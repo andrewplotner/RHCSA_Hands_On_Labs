@@ -1,0 +1,36 @@
+{
+    "title": "21. Exercise- Scheduling Tasks ",
+    "description": "Learn how to schedule tasks",
+    "noindex": true,
+    "details": {
+        "steps": [
+            {
+                "title": "Step 1 - update the timezone",
+                "text": "step1.md",
+                "answer": "step1-answer.md"
+            },
+            {
+                "title": "Step 2 - manipulate ntp set local time",
+                "text": "step2.md",
+                "answer": "step2-answer.md"
+            },
+            {
+                "title": "Step 3 - edit chrony conf",
+                "text": "step3.md",
+                "answer": "step3-answer.md"
+            },
+            {
+                "title": "Step 4 - edit chrony conf",
+                "text": "step4.md",
+                "answer": "step4-answer.md"
+            }
+        ]
+    },
+    "environment": {
+        "hideintro": true,
+        "uilayout": "terminal"
+    },
+    "backend": {
+        "imageid": "ubuntu:1804"
+    }
+}

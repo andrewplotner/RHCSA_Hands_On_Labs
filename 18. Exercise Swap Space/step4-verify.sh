@@ -1,0 +1,1 @@
+IN=$(grep swap /etc/fstab) && [[ $IN == U* ]] && echo done

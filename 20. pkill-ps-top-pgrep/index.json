@@ -1,0 +1,41 @@
+{
+    "title": "20. pkill-pgrep-top ",
+    "description": "Learning  how to kill and grep for processes",
+    "noindex": true,
+    "details": {
+        "steps": [
+            {
+                "title": "Step 1 - stop with kill",
+                "text": "step1.md",
+                "answer": "step1-answer.md"
+            },
+            {
+                "title": "Step 2 - start and terminate with kill",
+                "text": "step2.md",
+                "answer": "step2-answer.md"
+            },
+            {
+                "title": "Step 3 - pgrep for processes",
+                "text": "step3.md",
+                "answer": "step3-answer.md"
+            },
+            {
+                "title": "Step 4 - kill processes by user",
+                "text": "step4.md",
+                "answer": "step4-answer.md"
+            },
+            {
+                "title": "Step 5 - TOP",
+                "text": "step5.md",
+                "answer": "step5-answer.md"
+            }
+        ]
+    },
+    "environment": {
+        "hideintro": true,
+        "uilayout": "terminal"
+    },
+    "backend": {
+        "imageid": "ubuntu:1804"
+    }
+}

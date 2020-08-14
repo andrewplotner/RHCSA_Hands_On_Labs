@@ -1,0 +1,1 @@
+OUT=$( pvdisplay | grep "/dev/vdb1" | grep PV | cut -dV -f1 ) && [[ $OUT -eq P ]] && echo done

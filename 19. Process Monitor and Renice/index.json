@@ -1,0 +1,34 @@
+{
+    "title": "19. System Processes",
+    "description": "Monitor, Alter Processes",
+    "noindex": true,
+    "details": {
+        "steps": [
+            {
+                "title": "Step 1 - Monitor CPU Load",
+                "text": "step1.md",
+                "answer": "step1-answer.md"
+            },
+            {
+                "title": "Step 2 - Stop a Service",
+                "text": "step2.md",
+                "answer": "step2-answer.md",
+                "verify": "step2-verify.sh"
+            },
+            {
+                "title": "Step 3 - Start and renice a service",
+                "text": "step3.md",
+                "answer": "step3-answer.md",
+                "verify": "step3-verify.sh"
+
+            }
+        ]
+    },
+    "environment": {
+        "hideintro": true,
+        "uilayout": "terminal"
+    },
+    "backend": {
+        "imageid": "ubuntu:1804"
+    }
+}

@@ -1,0 +1,1 @@
+OUT=$( lvdisplay | grep "oak" | grep "Name" | cut -dV -f1 ) && [[ $OUT -eq L ]] && echo done

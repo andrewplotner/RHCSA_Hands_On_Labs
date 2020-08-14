@@ -1,0 +1,1 @@
+IN=$(free -m | grep Swap | cut -d" " -f14) && [[ $IN -eq 0 ]] && echo done

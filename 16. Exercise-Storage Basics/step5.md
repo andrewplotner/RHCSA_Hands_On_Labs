@@ -1,0 +1,1 @@
+<pre> Create an ext4 filesystem on the logical volume and mount it in /mnt/media </pre>
