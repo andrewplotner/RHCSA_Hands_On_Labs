@@ -1,0 +1,1 @@
+OUT=$( getfacl /tmp/file1 | grep mask | cut -d: -f3 ) && [[ $OUT == r-- ]] && echo done

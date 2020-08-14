@@ -1,0 +1,1 @@
+OUT=$(  ls -l /tmp | grep file2 | cut -d" " -f1 ) &&  [[ $OUT == *r-- ]] && echo done

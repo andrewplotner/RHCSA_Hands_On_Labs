@@ -1,0 +1,1 @@
+DOWN=$( ls -l /tmp | grep "dir1" |cut -d" " -f1 ) && [[ $DOWN == *x ]] && echo done

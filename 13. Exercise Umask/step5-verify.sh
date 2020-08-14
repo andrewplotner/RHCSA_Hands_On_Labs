@@ -1,0 +1,1 @@
+OUT=$( ls -l /tmp | grep file4 | cut -d" " -f1 ) &&  [[ $OUT == ----* ]] && IN=$( ls -l /tmp | grep dir2 | cut -d" " -f1 ) &&  [[ $IN == d--x* ]] && echo done

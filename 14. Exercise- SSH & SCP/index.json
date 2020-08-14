@@ -1,0 +1,56 @@
+{
+    "title": "14. SSH and SCP",
+    "description": "Altering default permissions",
+    "noindex": true,
+    "details": {
+        "steps": [
+            {
+                "title": "Step 1 - make users",
+                "text": "step1.md",
+                "answer": "step1-answer.md"
+            },
+            {
+                "title": "Step 2 - ssh with user creds",
+                "text": "step2.md",
+                "answer": "step2-answer.md",
+                "verify": "step2-verify.sh"
+            },
+            {
+                "title": "Step 3 - create key pair",
+                "text": "step3.md",
+                "answer": "step3-answer.md",
+                "verify": "step3-verify.sh"
+            },
+            {
+                "title": "Step 4 - Copy key pair",
+                "text": "step4.md",
+                "answer": "step4-answer.md",
+                "verify": "step4-verify.sh"
+            },
+            {
+                "title": "Step 5 - remote commands",
+                "text": "step5.md",
+                "answer": "step5-answer.md",
+                "verify": "step5-verify.sh"
+            },
+            {
+                "title": "Step 6 - SCP",
+                "text": "step6.md",
+                "answer": "step6-answer.md",
+                "verify": "step6-verify.sh"
+            },
+            {
+                "title": "Step 7 - SFTP",
+                "text": "step7.md",
+                "answer": "step7-answer.md",
+                "verify": "step7-verify.sh"
+            }
+        ]
+    },
+    "environment": {
+        "uilayout": "terminal-terminal"
+    },
+    "backend": {
+        "imageid": "kubernetes-cluster"
+    }
+}

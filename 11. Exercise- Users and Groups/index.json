@@ -1,0 +1,71 @@
+{
+    "title": "11. Exercise- Users and Groups",
+    "description": "Learning the basics of user and group management",
+    "noindex": true,
+    "details": {
+        "steps": [
+            {
+                "title": "Step 1 - Add Users",
+                "text": "step1.md",
+                "answer": "step1-answer.md",
+                "verify": "step1-verify.sh"
+            },
+            {
+                "title": "Step 2 - Modify the custom comment",
+                "text": "step2.md",
+                "answer": "step2-answer.md",
+                "verify": "step2-verify.sh"
+            },
+            {
+                "title": "Step 3 - Create a System account",
+                "text": "step3.md",
+                "answer": "step3-answer.md",
+                "verify": "step3-verify.sh"
+
+            },
+            {
+                "title": "Step 4 - create groups",
+                "text": "step4.md",
+                "answer": "step4-answer.md",
+                "verify": "step4-verify.sh"
+            },
+            {
+                "title": "Step 5 - Modify User Groups",
+                "text": "step5.md",
+                "answer": "step5-answer.md",
+                "verify": "step5-verify.sh"
+            },
+            {
+                "title": "Step 6 - create group permissions",
+                "text": "step6.md",
+                "answer": "step6-answer.md",
+                "verify": "step6-verify.sh"
+            },
+            {
+                "title": "Step 7 - special permissions",
+                "text": "step7.md",
+                "answer": "step7-answer.md",
+                "verify": "step7-verify.sh"
+            },
+            {
+                "title": "Step 8 - verify special bit permissions work",
+                "text": "step8.md",
+                "answer": "step8-answer.md",
+                "verify": "step8-verify.sh"
+            },
+            {
+                "title": "Step 9 - prevent shell login",
+                "text": "step9.md",
+                "answer": "step9-answer.md",
+                "verify": "step9-verify.sh"
+            }
+        ]
+    },
+    "environment": {
+        "hideintro": true,
+        "uilayout": "terminal"
+    },
+    "backend": {
+        "imageid": "centos"
+    }
+}
