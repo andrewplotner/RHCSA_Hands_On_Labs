@@ -1,0 +1,46 @@
+{
+    "title": "6. Exercise- External repository",
+    "description": "Learn how to setup an external repository",
+    "noindex": true,
+    "details": {
+        "steps": [
+            {
+                "title": "Step 1 - configure through url",
+                "text": "step1.md",
+                "answer": "step1-answer.md",
+                "verify": "step1-verify.sh"
+            },
+            {
+                "title": "Step 2 - disable and delete",
+                "text": "step2.md",
+                "answer": "step2-answer.md",
+                "verify": "step2-verify.sh"
+            },
+            {
+                "title": "Step 3 - configure manually",
+                "text": "step3.md",
+                "answer": "step3-answer.md",
+                "verify": "step3-verify.sh"
+            },
+            {
+                "title": "Step 4 - GPG key",
+                "text": "step4.md",
+                "answer": "step4-answer.md",
+                "verify": "step4-verify.sh"
+            },
+            {
+                "title": "Step 5 - disable manually and delete",
+                "text": "step5.md",
+                "answer": "step5-answer.md",
+                "verify": "step5-verify.sh"
+            }
+        ]
+    },
+    "environment": {
+        "hideintro": true,
+        "uilayout": "terminal"
+    },
+    "backend": {
+        "imageid": "centos"
+    }
+}

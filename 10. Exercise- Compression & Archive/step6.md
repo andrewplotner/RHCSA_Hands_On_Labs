@@ -1,0 +1,1 @@
+List the contents of the "user-logs.tar" file using star then pipe those into /root/verify1.txt

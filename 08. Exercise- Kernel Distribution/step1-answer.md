@@ -1,0 +1,1 @@
+tar -cvf logs.tar /var/log

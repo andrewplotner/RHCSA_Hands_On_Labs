@@ -1,0 +1,35 @@
+{
+    "title": "9. Exercise- Systemctl and Targets ",
+    "description": "discover targets and systemctl",
+    "noindex": true,
+    "details": {
+        "steps": [
+            {
+                "title": "Step 1 - display targets",
+                "text": "step1.md",
+                "answer": "step1-answer.md"
+            },
+            {
+                "title": "Step 2 - change default target",
+                "text": "step2.md",
+                "answer": "step2-answer.md",
+                "verify": "step2-verify.sh"
+            },
+            {
+                "title": "Step 3 - display services",
+                "text": "step3.md",
+                "answer": "step3-answer.md"
+            },
+            {
+                "title": "Step 4 -Final",
+                "text": "final.md"
+            }
+        ]
+    },
+    "environment": {
+        "uilayout": "terminal"
+    },
+    "backend": {
+        "imageid": "kubernetes-cluster-running:1.18"
+    }
+}

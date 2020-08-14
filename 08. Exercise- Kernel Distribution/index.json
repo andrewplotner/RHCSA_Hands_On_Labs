@@ -1,0 +1,31 @@
+{
+    "title": "8. Exercise- Kernel Distribution",
+    "description": "Hands on Experience with kernel versions",
+    "noindex": true,
+    "details": {
+        "steps": [
+            {
+                "title": "Step 1 - Kernel Basics",
+                "text": "step1.md",
+                "answer": "step1-answer.md",
+                "verify": "step1-verify.sh"
+            },
+            {
+                "title": "Step 2 - change kernel",
+                "text": "step2.md",
+                "answer": "step2-answer.md",
+                "verify": "step2-verify.sh"
+            },
+            {
+                "title": "Step 3 -Final",
+                "text": "final.md"
+            }
+        ]
+    },
+    "environment": {
+        "uilayout": "terminal"
+    },
+    "backend": {
+        "imageid": "centos"
+    }
+}

@@ -1,0 +1,1 @@
+gzip /root/logs.tar
