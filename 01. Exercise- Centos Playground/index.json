@@ -1,0 +1,24 @@
+{
+    "noindex": true,
+    "title": "1. Centos Playground",
+    "description": "Playground Terminal to test out and learn the basic linux commands",
+    "details": {
+        "steps": [
+            {
+                "title": "Basic Commands",
+                "text": "step1.md"
+            },
+            {
+                "title": "First 30 minutes",
+                "text": "step2.md"
+            }
+        ]
+    },
+    "environment": {
+        "hideintro": true,
+        "uilayout": "terminal"
+    },
+    "backend": {
+        "imageid": "centos"
+    }
+}

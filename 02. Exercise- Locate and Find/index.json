@@ -1,0 +1,43 @@
+{
+    "title": "2. Exercise- Locate and Find",
+    "description": "To introduce users to the locate and find utilities",
+    "noindex": true,
+    "details": {
+        "steps": [
+            {
+                "title": "Step 1 - Yum",
+                "text": "step1.md",
+                "answer": "step1-answer.md",
+                "verify": "step1-verify.sh"
+            },
+            {
+                "title": "Step 2 - Find a file",
+                "text": "step2.md"
+            },
+            {
+                "title": "Step 3 - Add a user",
+                "text": "step3.md",
+                "verify": "step3-verify.sh"
+            },
+            {
+                "title": "Step 4 - Find by user",
+                "text": "step4.md",
+                "answer": "step4-answer.md"
+            },
+            {
+                "title": "Step 5 - Find by time",
+                "text": "step5.md"
+            },
+            {
+                "title": "Step 6 -Final",
+                "text": "final.md"
+            }
+        ]
+    },
+    "environment": {
+        "uilayout": "terminal"
+    },
+    "backend": {
+        "imageid": "centos"
+    }
+}
