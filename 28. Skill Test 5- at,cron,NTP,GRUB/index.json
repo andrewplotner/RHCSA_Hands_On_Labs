@@ -8,7 +8,7 @@
                 "title": "Skill Test",
                 "text": "step1.md",
                 "answer": "step1-answer.md",
-                "code": "step2-foreground.sh",
+                "code": "step1-foreground.sh",
                 "verify": "step1-verify.sh"
             }
         ]
