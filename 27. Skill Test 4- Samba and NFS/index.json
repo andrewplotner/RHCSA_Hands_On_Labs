@@ -1,34 +1,38 @@
 {
-    "title": "19. System Processes",
-    "description": "Monitor, Alter Processes",
+    "title": "27. Skill Test Samba/ NFS ",
+    "description": "Set up and utilize an nfs and smb share",
     "noindex": true,
     "details": {
         "steps": [
             {
-                "title": "Step 1 - Monitor CPU Load",
+                "title": "Step 1 - MBR and GPT",
                 "text": "step1.md",
+                "code": "step1-foreground.sh",
                 "answer": "step1-answer.md"
             },
             {
-                "title": "Step 2 - Stop a Service",
+                "title": "Step 2 - create and mount a file system",
                 "text": "step2.md",
-                "answer": "step2-answer.md",
-                "verify": "step2-verify.sh"
+                "answer": "step2-answer.md"
             },
             {
-                "title": "Step 3 - Start and renice a service",
+                "title": "Step 3 - Make that mount persistent",
                 "text": "step3.md",
-                "answer": "step3-answer",
-                "verify": "step3-verify.sh"
-
+                "answer": "step3-answer.md"
+            },
+            {
+                "title": "Step 4 - Install an NFS",
+                "text": "step4.md",
+                "answer": "step4-answer.md"
             }
+            
         ]
     },
     "environment": {
         "hideintro": true,
-        "uilayout": "terminal"
+        "uilayout": "terminal-terminal"
     },
     "backend": {
-        "imageid": "ubuntu:2004"
+        "imageid": "kubernetes-cluster"
     }
 }
