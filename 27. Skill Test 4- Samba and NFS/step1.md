@@ -12,5 +12,6 @@ Mount the NFS file system on Host 2 at /mnt/smb, and make it persistent.
 
 	
 <pre>Objective 5</pre>
-Touch "Verify.txt" in both the nfs shared and smb shared folders
-	
+From host 2 touch "Verify.txt" in both the nfs shared and smb shared folders
+
+Run this command to verify: `[ -e /nfs/Verify.txt ] && [ -e /smb/Verify.txt ] && echo "Awesome Job, you freaking rock!" || echo "Try Again"`{{execute}}
