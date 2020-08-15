@@ -1,6 +1,6 @@
 {
     "title": "17. Exercise- MBR/GPT/Persistence/NFS",
-    "description": "Practice with MBR and GPT and learn persistence",
+    "description": "Practice with MBR and GPT and learn persistence. In addition set up your very first NFS share",
     "noindex": true,
     "details": {
         "steps": [
