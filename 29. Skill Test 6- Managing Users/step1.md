@@ -13,3 +13,4 @@ Add the "Twitch" group as a supplementary group for all three users
 <pre>Objective 5</pre>
 Lock the user ATV's account. 
 	
+Verify all actions by checking the /etc/group and /etc/shadow file as well as using the Id command on all users. 
