@@ -8,8 +8,7 @@
                 "title": "Step 1 - MBR and GPT",
                 "text": "step1.md",
                 "code": "step1-foreground.sh",
-                "answer": "step1-answer.md",
-                "verify": "step1-verify.sh"
+                "answer": "step1-answer.md"
             }
         ]
     },
