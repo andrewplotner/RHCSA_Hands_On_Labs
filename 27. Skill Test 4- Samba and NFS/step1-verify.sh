@@ -1,2 +1,2 @@
-[ -e /nfs/verify.txt ] && echo done
+ssh node01 [ -e /mnt/nfs/Verify.txt ] && echo done
 
