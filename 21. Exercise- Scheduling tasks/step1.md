@@ -1,4 +1,4 @@
-Run this command: `apt-get install -y chrony`{{execute}}
+install crony
 
 <pre> update the system's timezone to America/Chicago </pre>
 
