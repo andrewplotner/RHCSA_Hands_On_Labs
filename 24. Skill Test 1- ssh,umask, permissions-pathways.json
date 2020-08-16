@@ -1,0 +1,37 @@
+{
+    "title": "RHCSA Skill Tests",
+    "description": "all of the Skill Tests created to pass the RHCSA certification exam",
+    "courses": [
+      {
+        "course_id": "Skill Test 1- ssh,umask, permissions",
+        "title": "Skill Test 1- ssh,umask, permissions",
+        "description": ""
+      },
+      {
+        "course_id": "Skill Test 2- mbr,gpt,filesystems, mounting",
+        "title": "Skill Test 2- mbr,gpt,filesystems, mounting",
+        "description": ""
+      },
+      {
+        "course_id": "Skill Test 3- LVM",
+        "title": "Skill Test 3- LVM",
+        "description": ""
+      },
+      {
+        "course_id": "Skill Test 4- Samba and NFS",
+        "title": "Skill Test 4- Samba and NFS",
+        "description": ""
+      },
+      {
+        "course_id": "Skill Test 5- at,cron,NTP,GRUB",
+        "title": "Skill Test 5- at,cron,NTP,GRUB",
+        "description": ""
+      },
+      {
+        "course_id": "Skill Test 6- Managing Users",
+        "title": "Skill Test 6- Managing Users",
+        "description": ""
+      }
+    ]
+  }
+  
