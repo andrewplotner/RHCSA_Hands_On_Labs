@@ -3,7 +3,6 @@
     "description": "all of the labs created to pass the RHCSA certification exam",
     "courses": [
       {
-        "pathway_id": "RHCSA_Hands_On_Labs",
         "course_id": "01. Exercise- Centos Playground",
         "title": "1. Centos Playground",
         "description": ""
