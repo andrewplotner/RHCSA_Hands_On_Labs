@@ -31,6 +31,6 @@
         "uilayout": "terminal"
     },
     "backend": {
-        "imageid": "ubuntu:1804"
+        "imageid": "rhel8-2"
     }
 }
