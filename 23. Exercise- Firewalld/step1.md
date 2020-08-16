@@ -1,4 +1,3 @@
-Run this command: `apt-get install -y firewalld`{{execute}}
 
 <pre> start and enable firewalld on your machine</pre>
 
