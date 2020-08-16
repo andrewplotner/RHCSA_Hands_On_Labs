@@ -4,10 +4,6 @@
 
 <pre> Booting to a new kernel </pre>
 *note this environment prevents us from doing so*
->>Q2: what command do you need to run to change the kernel<<
-(*) grub2-set-default <#>
-( ) krnl-chng <version>
-( ) yum set kernel <version>
-( ) krnl-chng <#>
 
+Run the command needed to change the kernel
 
