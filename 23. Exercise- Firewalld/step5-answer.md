@@ -1,1 +1,1 @@
-restorecon /var/www/html/index.html
+we can verify by using `setenforce 0` to turn off SELinux and run the curl command. This will allow the website to work. Once it is workign we just need to turn it back on `setenforce 1` and run a `restorecon /var/www/html/index.html` to make the files SELinux labels match its parent directories.
