@@ -1,4 +1,4 @@
-<pre> List all the available groups </pre>
+<pre> List all the available yum groups </pre>
 >>Q1: What is the last item in the available groups list?<<
 ( ) Turbogear applications framework
 ( ) Var tools
