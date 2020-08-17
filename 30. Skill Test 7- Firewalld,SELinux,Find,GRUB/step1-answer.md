@@ -6,7 +6,7 @@ $ firewall-cmd --reload
 
 <pre>
 $ vi /etc/httpd/conf/httpd.conf 
-change the DocumentRoot on line 122 from "/var/www/html" to "/var/web"
+change the DocumentRoot on line 122 & 127 from "/var/www/html" to "/var/web"
 $ systemctl restart httpd
 </pre>
 
