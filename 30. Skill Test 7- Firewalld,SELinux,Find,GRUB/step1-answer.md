@@ -1,7 +1,7 @@
 <pre>
 $ firewall-cmd --permanent --zone=public --add-port=80/tcp
 $ firewall-cmd --permanent --zone=block --add-source=185.56.21.2
-$ firewall-cmd reload 
+$ firewall-cmd --reload 
 </pre>
 
 <pre>
