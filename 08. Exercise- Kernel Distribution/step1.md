@@ -1,10 +1,10 @@
 **<pre> 1. View the Current Distribution of the Kernel </pre>**
 
 >>Q2: What is it?<<
-( ) 3.10.0-1127.18.2el7
-(*) 4.15.0-69-generic
-( ) 3.10.0-150-advanced
-( ) 5.26-1143.5.1b18
+( ) 3.*.0-1127.18.2el7
+(*) 4.*.0-69-generic
+( ) 3.*.0-150-advanced
+( ) 5.*-1143.5.1b18
 
 **<pre>3. Check to see if there are any available kernel update </pre>**
 
