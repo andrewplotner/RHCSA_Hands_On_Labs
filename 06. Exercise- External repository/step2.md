@@ -1,6 +1,6 @@
 1.View and verify that the repository is in fact enabled on the system.
 
-2.Using yum config manager, disable the epel repository.
+2.Using yum config manager, disable the dl.edoraproject repository.
 
 3. Verify the repository is disabled
 
