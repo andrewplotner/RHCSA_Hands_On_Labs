@@ -23,7 +23,7 @@
                 "verify": "step3-verify.sh"
             },
             {
-                "title": "Step 5 - Search that repo file",
+                "title": "Step 4 - Search that repo file",
                 "text": "step5.md",
                 "answer": "step5-answer.md",
                 "verify": "step5-verify.sh"
