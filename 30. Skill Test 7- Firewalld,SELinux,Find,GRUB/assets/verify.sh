@@ -50,8 +50,9 @@ HTTPDCHECK=$( cat /etc/httpd/conf/httpd.conf | grep "DocumentRoot " | awk '{prin
 comparison $HTTPDCHECK "*/var/web*" "2" 
 
 CURLCHECK=$( curl localhost/index.html )
+CAT=$( cat /var/web/index.html )
 
-comparison $CURLCHECK "this was made in /root" "3"
+comparison $CURLCHECK $CAT "3"
 
 FCHECK=$( cat /root/old-files | grep "/rpc" )
 
