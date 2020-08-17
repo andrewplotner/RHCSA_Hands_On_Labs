@@ -48,7 +48,8 @@
             {
                 "title": "Step 8 - Remove default permissions",
                 "text": "step8.md",
-                "answer": "step8-answer.md"
+                "answer": "step8-answer.md",
+                "verify": "step8-verify.sh"
             },
             {
                 "title": "Step 9 - remove all ACLs",
