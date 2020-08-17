@@ -21,3 +21,19 @@ $ usermod -aG Twitch ATV
 <pre>
 $ usermod -L ATV
 </pre>
+
+<pre>
+chage -E (MM/DD/YYYY) LordHelix
+</pre>
+
+<pre>
+$ usermod -s /sbin/nologin 
+$ chage -M 7 BirdJesus
+</pre>
+
+<pre>
+$ usermod -s /sbin/nologin 
+$ vi /etc/login.defs
+		PASS_MAX_DAYS 180
+    PASS_WARN_AGE 14
+</pre>
