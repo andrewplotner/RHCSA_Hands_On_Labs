@@ -7,14 +7,12 @@
             {
                 "title": "Step 1 - Mount ISO",
                 "text": "step1.md",
-                "answer": "step1-answer.md",
-                "verify": "step1-verify.sh"
+                "answer": "step1-answer.md"
             },
             {
                 "title": "Step 2 - Repo Config",
                 "text": "step2.md",
-                "answer": "step2-answer.md",
-                "verify": "step2-verify.sh"
+                "answer": "step2-answer.md"
             },
             {
                 "title": "Step 3 - Disable or delete other repos",
@@ -29,14 +27,12 @@
             {
                 "title": "Step 5 - install",
                 "text": "step5.md",
-                "answer": "step5-answer.md",
-                "verify": "step5-verify.sh"
+                "answer": "step5-answer.md"
             },
             {
                 "title": "Step 6 - uninstall",
                 "text": "step6.md",
-                "answer": "step6-answer.md",
-                "verify": "step6-verify.sh"
+                "answer": "step6-answer.md"
             }
         ]
     },
