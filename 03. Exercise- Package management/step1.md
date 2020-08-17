@@ -11,10 +11,10 @@
 
 **<pre> view _information_ about the apache web server package</pre>**
 >>Q3: What repo is the httpd package apart of according to info<<
-(*) base/7/x86_64
+(*) base
 ( ) active (exited)
 ( ) inactive (dead)
-( ) service doesnt exist
+( ) extras
 
 
 
