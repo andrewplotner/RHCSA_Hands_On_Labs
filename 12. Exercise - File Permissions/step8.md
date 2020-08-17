@@ -1,3 +1,3 @@
-<pre> Remove the default permissiosn from dir1 </pre>
+<pre> Remove the all ACLs and default permissiosn from dir1 </pre>
 
 
