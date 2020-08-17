@@ -5,7 +5,7 @@
 ( ) no
 
 **<pre> _Search_ the yum repository for the Apache web Server</pre>**
->>Q2: Is mod_geoip.x86_64 apart of the package list generated as being associated with apache?<<
+>>Q2: Are there more than 10 package lists generated as being associated with apache?<<
 (*) yes
 ( ) no
 
