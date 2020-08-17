@@ -23,12 +23,6 @@
                 "verify": "step3-verify.sh"
             },
             {
-                "title": "Step 4 - GPG key",
-                "text": "step4.md",
-                "answer": "step4-answer.md",
-                "verify": "step4-verify.sh"
-            },
-            {
                 "title": "Step 5 - Search that repo file",
                 "text": "step5.md",
                 "answer": "step5-answer.md",
