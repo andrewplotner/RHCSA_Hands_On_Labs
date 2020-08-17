@@ -49,10 +49,9 @@ HTTPDCHECK=$( cat /etc/httpd/conf/httpd.conf | grep "DocumentRoot " | awk '{prin
 
 comparison $HTTPDCHECK "*/var/web*" "2" 
 
-CURLCHECK=$( curl localhost/index.html )
-CAT=$( cat /var/web/index.html )
+CURLCHECK=$( ls -Z /var/web | cut -d: -f3 )
 
-comparison $CURLCHECK $CAT "3"
+comparison $CURLCHECK "httpd_sys_content_t" "3"
 
 FCHECK=$( cat /root/old-files | grep "/rpc" )
 
