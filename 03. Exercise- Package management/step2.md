@@ -11,7 +11,7 @@
 
 **<pre> Update just the apache server</pre>**
 
-`if yum update httpd | grep "^No" ; then echo congrats ; fi`{{execute}}
+`CHECK=$( yum update httpd | grep "^No" | awk '{print $1}') ; if [[ $CHECK == No ]] ; then echo congrats ; else echo "Update Apache"; fi`{{execute}}
 
 **<pre> Now remove the apache web server package. </pre>**
 
