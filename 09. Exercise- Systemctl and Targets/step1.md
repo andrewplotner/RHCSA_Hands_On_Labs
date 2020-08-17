@@ -7,7 +7,7 @@
 =~= * 
 
 >>Q3: What is your default target?<<
-( ) multi-user.target
-(*) graphical.target
+(*) multi-user.target
+( ) graphical.target
 
 
