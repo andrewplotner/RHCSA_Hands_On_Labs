@@ -8,11 +8,7 @@
 
 **<pre>3. Check to see if there are any available kernel update </pre>**
 
->>Q4: Is the kernel that popped up a newer version than yours?<<
-( ) yes
-(*) no
-
-**<pre>5. Download the available kernel package using RPM wih the install options</pre>**
+**<pre>4. Download the available kernel package using RPM wih the install options</pre>**
 
 >>Q6: Did it fail?<<
 (*) yes
@@ -20,8 +16,3 @@
 
 **<pre> 7. Download it with Yum instead</pre>**
 
->>Q8: how many dependencies did it need installed?<<
-( ) 10
-( ) 5
-( ) 4
-(*) 9
