@@ -36,7 +36,7 @@ $ mount -t nfs (IP of host1):/nfs /mnt/nfs
 $ echo "UUID=(uuid)  /mnt/nfs  nfs defaults 0 0" >> /etc/fstab
 </<pre>
 
-<pre>
+
 On Host2
 $ touch /mnt/nfs/Verify.txt ; touch /mnt/smb/Verify.txt
-</pre>
+
