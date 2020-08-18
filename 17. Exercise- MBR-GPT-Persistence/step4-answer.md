@@ -9,5 +9,5 @@ exportfs -a
 <pre>
 On Host2
 mkdir /mnt/nfs
-showmount -e *note in this environment it may not populate
+showmount -e (IP of host1)
 mount -t nfs (IP of host1):/nfs /mnt/nfs
