@@ -3,5 +3,3 @@
 <pre> disable to swap file </pre>
 
 <pre> once disabled, delete the entry from the fstab file </pre>
-
-Note: there is no check on the first lesson
