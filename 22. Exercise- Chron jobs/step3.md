@@ -1,5 +1,3 @@
-Run this command before starting `apt-get install -y anacron`{{execute}}
-
 <pre> Delete your scheduled job </pre>
 
 Verify answer with:`RED=$(tput setaf 1) ; GREEN=$(tput setaf 2); RESET=$(tput sgr0); CHECK=$( atq | cut -f2 | cut -d" " -f7 ) && [[ $CHECK != root ]] && echo "${GREEN}Awesome, proceed ${RESET}" || echo "${RED}Try Again${RESET}"`{{execute}}
