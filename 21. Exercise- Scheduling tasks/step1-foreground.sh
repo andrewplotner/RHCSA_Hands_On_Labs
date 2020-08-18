@@ -1,1 +1,1 @@
-yum install crony -y
+yum install chrony -y
