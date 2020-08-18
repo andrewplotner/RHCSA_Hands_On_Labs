@@ -11,4 +11,4 @@ echo -e "${COLOR} $2 ${NC}"
 yum install -y gdisk xfsprogs
 
 clear 
-print_color "green" Please Continue" 
+
