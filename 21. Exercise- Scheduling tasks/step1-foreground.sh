@@ -1,1 +1,1 @@
-apt-get install crony -y
+yum install crony -y
