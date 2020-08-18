@@ -7,7 +7,8 @@
             {
                 "title": "Step 1 - working with at",
                 "text": "step1.md",
-                "answer": "step1-answer.md"
+                "answer": "step1-answer.md",
+                "code": "step1-foreground.sh"
             },
             {
                 "title": "Step 2 - manipulating at jobs",
