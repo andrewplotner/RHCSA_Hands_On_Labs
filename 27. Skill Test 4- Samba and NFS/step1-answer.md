@@ -13,10 +13,11 @@ $ mkdir /smb
 $ chmod 777 /smb
 $ systemctl start smb
 </pre>
+
 <pre> 
 on host2
 $ mkdir /mnt/smb
-$ mount -t cifs //<IP_of_host01>/share /mnt/smb -o username=smbuser,password=LordHelix
+$ mount -t cifs //(IP_of_host01)/share /mnt/smb -o username=smbuser,password=LordHelix
 </<pre>
 
 <pre> 
@@ -30,9 +31,9 @@ $ exportfs -a
 <pre> 
 on host 2
 $ mkdir /mnt/nfs
-$ showmount -e
-$ mount -t nfs :/nfs /mnt/nfs
-$ echo "UUID=<uuid>  /mnt/nfs  nfs defaults 0 0" >> /etc/fstab
+$ showmount -e    *note in this environment it may not populate
+$ mount -t nfs (IP of host1):/nfs /mnt/nfs
+$ echo "UUID=(uuid)  /mnt/nfs  nfs defaults 0 0" >> /etc/fstab
 </<pre>
 
 <pre>
