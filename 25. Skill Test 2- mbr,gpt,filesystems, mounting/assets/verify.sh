@@ -37,14 +37,14 @@ fi
 #
 ####Body of Code ####
 #
-MBRCHECK=$( gdisk -l /dev/vdb | grep -v Linux | awk '{print $4 $5}' | grep "2.0GiB" )
-
-comparison "${MBRCHECK}" "2.0GiB" "1"
-
-
 GPTCHECK=$( gdisk -l /dev/vdb | grep Linux | awk '{print $4 $5}' | grep "2.0GiB" )
 
-comparison "${GPTCHECK}" "2.0GiB" "2" 
+comparison "${GPTCHECK}" "2.0GiB" "1"
+
+
+MBRCHECK=$( gdisk -l /dev/vdb | grep -v Linux | awk '{print $4 $5}' | grep "1.9GiB" )
+
+comparison "${MBRCHECK}" "1.9GiB" "2" 
 
 PERSISTENCECHECK=$( cat /etc/fstab | grep "/mount/gpt" | awk '{print $3}' )
 
