@@ -7,6 +7,6 @@ Verify answer with:`RED=$(tput setaf 1) ; GREEN=$(tput setaf 2); RESET=$(tput sg
 Verify answer with:`CHECK=$( ls -l /home/user | grep uptime | cut -d" " -f1 ) && [[ $CHECK == *x* ]] && CONTENT=$( cat /home/user/uptime.sh | grep uptime | cut -d" " -f1 ) && [[ $CONTENT == logger ]] && echo "${GREEN}Awesome, proceed ${RESET}" || echo "${RED}Try Again${RESET}"`{{execute}}
 
 <pre> Schedule an anacronjob so that the script runs every 5 days if it has not currently been run; make sure the *job* name is "uptimelog".
-Note: place the entry at the top of the other entries so it is run first. Follow Syntax of using Tabs to seperate columns </pre>
+</pre>
 
 Verify answer with:`CHECK=$( cat /etc/anacrontab | awk '/uptime/ {print $3}' ) && [[ $CHECK == uptimelog ]] && echo "${GREEN}Awesome, proceed ${RESET}" || echo "${RED}Try Again${RESET}"`{{execute}}
