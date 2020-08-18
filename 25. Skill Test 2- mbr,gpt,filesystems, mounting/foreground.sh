@@ -1,4 +1,4 @@
-yum install -y gdisk xfsprogs
+apt-get install -y gdisk xfsprogs
 
 clear 
 
