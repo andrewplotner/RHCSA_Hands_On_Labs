@@ -8,7 +8,7 @@ esac
 echo -e "${COLOR} $2 ${NC}"
 }
 
-apt-get install -y gdisk xfsprogs
+yum install -y gdisk xfsprogs
 
 clear 
 print_color "green" Please Continue" 
