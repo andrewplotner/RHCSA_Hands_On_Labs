@@ -31,7 +31,7 @@ $ exportfs -a
 <pre> 
 on host 2
 $ mkdir /mnt/nfs
-$ showmount -e    *note in this environment it may not populate
+$ showmount -e (ip of host1)
 $ mount -t nfs (IP of host1):/nfs /mnt/nfs
 $ echo "UUID=(uuid)  /mnt/nfs  nfs defaults 0 0" >> /etc/fstab
 </<pre>
