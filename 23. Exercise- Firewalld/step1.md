@@ -1,7 +1,7 @@
 
 <pre> start and enable firewalld on your machine</pre>
 
-<pre> Look at the list of services that are running </pre>
+<pre> Look at the list of services that the firewall is running </pre>
 
 <pre> configure your public zone to accept traffic through port 80 and make it persistent </pre>
 
