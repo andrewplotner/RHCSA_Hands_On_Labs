@@ -9,4 +9,4 @@ Verify answer with:`CHECK=$( ls -l /home/user | grep uptime | cut -d" " -f1 ) &&
 <pre> Schedule an anacronjob so that the script runs every 5 days if it has not currently been run; make sure the *job* name is "uptimelog".
 Note: place the entry at the top of the other entries so it is run first. Follow Syntax of using Tabs to seperate columns </pre>
 
-Verify answer with:`CHECK=$( cat /etc/anacrontab | grep "uptimelog" | cut -d" " -f3 ) && [[ $CHECK == uptimelog ]] && echo "${GREEN}Awesome, proceed ${RESET}" || echo "${RED}Try Again${RESET}"`{{execute}}
+Verify answer with:`CHECK=$( cat /etc/anacrontab | awk '/uptime/ {print $3}' ) && [[ $CHECK == uptimelog ]] && echo "${GREEN}Awesome, proceed ${RESET}" || echo "${RED}Try Again${RESET}"`{{execute}}
