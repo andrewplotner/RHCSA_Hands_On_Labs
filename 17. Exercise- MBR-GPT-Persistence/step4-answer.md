@@ -10,4 +10,4 @@ exportfs -a
 On Host2
 mkdir /mnt/nfs
 showmount -e
-mount -t nfs <IP of host1>:/nfs /mnt/nfs
+mount -t nfs (IP of host1):/nfs /mnt/nfs
