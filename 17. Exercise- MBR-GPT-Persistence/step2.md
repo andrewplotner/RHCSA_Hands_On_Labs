@@ -5,4 +5,4 @@
 <pre> Mount /dev/vda1 to /mnt/mymount1 and /dev/vda2 to /mnt/mymount2 </pre>
 
 <pre> Run lsblk to confirm- no verification on this step </pre>
-`CHECK=$(lsblk | grep vdb2 | cut -d" " -f23) && [[ $CHECK == "/mnt/mymount2" ]] && echo "Congrats, it is set up correctly!" || echo "Try Again"`{{execute}} 
+`CHECK=$(lsblk | grep vdb2 | awk '{print $7}') && [[ $CHECK == "/mnt/mymount2" ]] && echo "Congrats, it is set up correctly!" || echo "Try Again"`{{execute}} 
