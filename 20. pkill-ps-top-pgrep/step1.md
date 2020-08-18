@@ -8,4 +8,4 @@ Execute the following command `(while true; do echo "My Program" > ~/output.file
 
 <pre> view the stopped jobs in the background </pre>
 Test with the below command
-`IN=$( jobs | grep "while true" | cut -d" " -f3 ) && [[ $IN == Stopped ]] && echo "Great Job!" || echo "Try Again"`{{execute}}
+`IN=$( jobs | grep "while true" | cut -d" " -f3 ) && [[ $IN == Stopped ]] &&  GREEN=$(tput setaf 2)&& RESET=$(tput setaf 7) && echo "${GREEN}Awesome, proceed ${RESET}" || RED=$(tput setaf 1) && echo "${RED}Try Again${RESET}"`{{execute}}
