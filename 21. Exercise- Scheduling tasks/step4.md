@@ -9,4 +9,4 @@ server 3.north-america.pool.ntp.org
 <pre> Confirm by running the sources command you used in the previous step. </pre>
 
 
-Verify answer with:`CHECK=$( cat /etc/chrony/chrony.conf | awk '/north-america.pool/ {print $3 ) && [[ $CHECK == "iburst" ]] && echo "${GREEN}Awesome Job, Proceed ${RESET}" || echo "$${RED}Try Again ${RESET}"`{{execute}}
+Verify answer with:`CHECK=$( cat /etc/chrony.conf | awk '/north-america.pool/ {print $3}' ) && [[ $CHECK == "iburst" ]] && echo "${GREEN}Awesome Job, Proceed ${RESET}" || echo "${RED}Try Again ${RESET}"`{{execute}}
