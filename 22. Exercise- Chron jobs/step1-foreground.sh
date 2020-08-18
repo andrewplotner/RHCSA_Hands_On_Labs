@@ -1,2 +1,2 @@
-yum install -y chrony at
+yum install -y chrony at anacron
 clear
