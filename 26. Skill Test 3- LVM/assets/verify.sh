@@ -37,15 +37,15 @@ fi
 #
 ####Body of Code ####
 #
-PVCHECK=$( pvdisplay | grep "vdd" | awk '{print $3}' | grep vdd )
+PVCHECK=$( pvdisplay | awk '/vdc/ {print $3}' )
 
-comparison ${PVCHECK} "/dev/vdd" "1"
+comparison ${PVCHECK} "/dev/vdc" "1"
 
-VGCHECK=$( vgdisplay all-terrain | grep "all-terrain" | awk '{print $3}' )
+VGCHECK=$( vgdisplay all-terrain |  awk '/all-terrain/ {print $3}' )
 
 comparison "${VGCHECK}" "all-terrain" "2" 
 
-LVCHECK=$( lvdisplay /dev/all-terrain/venomoth | grep "LV Size" | awk '{print $3 $4}' )
+LVCHECK=$( lvdisplay /dev/all-terrain/venomoth |  awk '/LV Size/ {print $3 $4}' )
 
 comparison $LVCHECK "<5.20GiB" "3" 
 
