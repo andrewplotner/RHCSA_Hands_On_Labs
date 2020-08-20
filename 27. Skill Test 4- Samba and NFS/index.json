@@ -17,6 +17,6 @@
         "uilayout": "terminal-terminal"
     },
     "backend": {
-        "imageid": "kubernetes-cluster"
+        "imageid": "kubernetes-node-centos7-1-16"
     }
 }
