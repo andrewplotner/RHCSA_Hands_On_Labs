@@ -1,2 +1,2 @@
-apt-get update
-apt-get install -y nfs-kernel-server samba cifs-utils
+yum update -y
+yum install -y nfs-kernel-server samba cifs-utils
