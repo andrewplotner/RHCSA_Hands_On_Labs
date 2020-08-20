@@ -4,4 +4,4 @@
 *<pre>Objective 4 </pre>*find the currently installed kernel version.  utilizing input output redirection echo that into "/root/verify"
 *<pre>Objective 5</pre>*Using Input and output commands  to extract just the two commands that you placed in the /var/log/syslog file and redirect them to append to the /root/verify file. 
 	
-run this command to confirm ` Verify=$(cat /root/verify | awk '{print $3}') && [[ $Verify == *18* ]] && echo "Great Job" || echo "Try Again"`{{execute}} 
+run this command to confirm ` Verify=$(cat /root/verify) && [[ $Verify == *Pokemon*hello* ]] && echo "Great Job" || echo "Try Again"`{{execute}} 
