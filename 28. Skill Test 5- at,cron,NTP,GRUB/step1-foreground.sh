@@ -1,2 +1,2 @@
 apt-get update
-apt-get install -y chrony 
+apt-get install -y chrony at
