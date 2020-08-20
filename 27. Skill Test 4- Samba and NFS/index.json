@@ -17,6 +17,6 @@
         "uilayout": "terminal-terminal"
     },
     "backend": {
-        "imageid": "multinode-rhel8"
+        "imageid": "ubuntu:2004"
     }
 }
