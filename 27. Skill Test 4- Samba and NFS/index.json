@@ -17,6 +17,6 @@
         "uilayout": "terminal-terminal"
     },
     "backend": {
-        "imageid": "rhel8-2"
+        "imageid": "multinode-rhel8"
     }
 }
