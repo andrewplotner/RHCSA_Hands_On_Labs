@@ -5,7 +5,7 @@
     "details": {
         "steps": [
             {
-                "title": "Step 1 - MBR and GPT",
+                "title": "Step 1 - External Storage",
                 "text": "step1.md",
                 "code": "step1-foreground.sh",
                 "answer": "step1-answer.md"
