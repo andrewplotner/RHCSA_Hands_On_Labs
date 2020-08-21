@@ -1,1 +1,1 @@
-group=$( cat /etc/group | grep Helix | cut -d: -f1 ) && [[ $group == Twitch ]] && PASS=$( cat /etc/login.defs | grep PASS_WARN_AGE | awk '{print $2}' ) && [[ $PASS == 14 ]] && echo "done"
+group=$( cat /etc/group | awk -F : '/Helix/ {print $1}' | grep Twitch ) && [[ $group == Twitch ]] && PASS=$( cat /etc/login.defs | grep PASS_WARN_AGE | awk '/14/ {print $2}' ) && [[ $PASS == 14 ]] && echo "done"
