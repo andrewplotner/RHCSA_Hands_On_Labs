@@ -1,0 +1,69 @@
+{
+    "title": "12. Exercise- Access Control Lists",
+    "description": "ACL Manipulation",
+    "noindex": true,
+    "details": {
+        "steps": [
+            {
+                "title": "Step 1 - Add Users",
+                "text": "step1.md",
+                "answer": "step1-answer.md",
+                "verify": "step1-verify.sh"
+            },
+            {
+                "title": "Step 2 - Make Files and Directoris",
+                "text": "step2.md",
+                "answer": "step2-answer.md",
+                "verify": "step2-verify.sh"
+            },
+            {
+                "title": "Step 3 - Check ACL permissions",
+                "text": "step3.md"
+
+            },
+            {
+                "title": "Step 4 - Set an ACL",
+                "text": "step4.md",
+                "answer": "step4-answer.md",
+                "verify": "step4-verify.sh"
+            },
+            {
+                "title": "Step 5 - Change the mask",
+                "text": "step5.md",
+                "answer": "step5-answer.md",
+                "verify": "step5-verify.sh"
+            },
+            {
+                "title": "Step 6 - Change default permissions",
+                "text": "step6.md",
+                "answer": "step6-answer.md",
+                "verify": "step6-verify.sh"
+            },
+            {
+                "title": "Step 7 - set FACL",
+                "text": "step7.md",
+                "answer": "step7-answer.md",
+                "verify": "step7-verify.sh"
+            },
+            {
+                "title": "Step 8 - Remove default permissions",
+                "text": "step8.md",
+                "answer": "step8-answer.md",
+                "verify": "step8-verify.sh"
+            },
+            {
+                "title": "Step 9 - remove all ACLs",
+                "text": "step9.md",
+                "answer": "step9-answer.md",
+                "verify": "step9-verify.sh"
+            }
+        ]
+    },
+    "environment": {
+        "hideintro": true,
+        "uilayout": "terminal"
+    },
+    "backend": {
+        "imageid": "centos"
+    }
+}

@@ -1,0 +1,1 @@
+OUT=$( getfacl /tmp/dir1 | grep starbuck | cut -d: -f4 ) && [[ $OUT == rwx ]] && echo done

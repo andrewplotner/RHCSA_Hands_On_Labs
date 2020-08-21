@@ -1,0 +1,1 @@
+OUT=$( grep apollo /etc/shadow | cut -d: -f2) && [[ $OUT =~ 6 ]] &&  OUT=$( grep starbuck /etc/shadow | cut -d: -f2) && [[ $OUT =~ 6 ]] && echo done

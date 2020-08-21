@@ -1,0 +1,1 @@
+OUT=$( grep starbuck /etc/passwd | cut -d: -f5) && [[ $OUT == pilot ]] &&  echo done

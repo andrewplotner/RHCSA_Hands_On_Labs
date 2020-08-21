@@ -1,0 +1,58 @@
+{
+    "title": "13. Exercise- Umask",
+    "description": "Altering default permissions",
+    "noindex": true,
+    "details": {
+        "steps": [
+            {
+                "title": "Step 1 - view current umask",
+                "text": "step1.md",
+                "answer": "step1-answer.md",
+                "verify": "step1-verify.sh"
+            },
+            {
+                "title": "Step 2 - Make Files and Directoris",
+                "text": "step2.md",
+                "answer": "step2-answer.md",
+                "verify": "step2-verify.sh"
+            },
+            {
+                "title": "Step 3 - Change default permissions with umask",
+                "text": "step3.md",
+                "answer": "step3-answer.md",
+                "verify": "step3-verify.sh"
+            },
+            {
+                "title": "Step 4 - Change umask",
+                "text": "step4.md",
+                "answer": "step4-answer.md",
+                "verify": "step4-verify.sh"
+            },
+            {
+                "title": "Step 5 - Change umask",
+                "text": "step5.md",
+                "answer": "step5-answer.md",
+                "verify": "step5-verify.sh"
+            },
+            {
+                "title": "Step 6 - mask all permissions",
+                "text": "step6.md",
+                "answer": "step6-answer.md",
+                "verify": "step6-verify.sh"
+            },
+            {
+                "title": "Step 7 - Persistance",
+                "text": "step7.md",
+                "answer": "step7-answer.md",
+                "verify": "step7-verify.sh"
+            }
+        ]
+    },
+    "environment": {
+        "hideintro": true,
+        "uilayout": "terminal"
+    },
+    "backend": {
+        "imageid": "centos"
+    }
+}

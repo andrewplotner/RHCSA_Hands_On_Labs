@@ -1,0 +1,1 @@
+DOWN=$( ls -l /home/groups/galactica | grep "file1" |cut -d" " -f4 ) && [[ $DOWN == galactica ]] && echo done
