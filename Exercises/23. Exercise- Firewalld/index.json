@@ -1,0 +1,42 @@
+{
+    "title": "23. Exercise- Firewalld ",
+    "description": "Learning the basics of firewalld",
+    "noindex": true,
+    "details": {
+        "steps": [
+            {
+                "title": "Step 1 - enabling and adding a rule",
+                "text": "step1.md",
+                "answer": "step1-answer.md",
+                "code": "step1-foreground.sh"
+            },
+            {
+                "title": "Step 2 - removing a rule",
+                "text": "step2.md",
+                "answer": "step2-answer.md"
+            },
+            {
+                "title": "Step 3 - utilizing the deny zone",
+                "text": "step3.md",
+                "answer": "step3-answer.md"
+            },
+            {
+                "title": "Step 4 - checking SELinux permissions",
+                "text": "step4.md",
+                "answer": "step4-answer.md"
+            },
+            {
+                "title": "Step 5 - Changing SELinux permissions",
+                "text": "step5.md",
+                "answer": "step5-answer.md"
+            }
+        ]
+    },
+    "environment": {
+        "hideintro": true,
+        "uilayout": "terminal"
+    },
+    "backend": {
+        "imageid": "rhel8-2"
+    }
+}
