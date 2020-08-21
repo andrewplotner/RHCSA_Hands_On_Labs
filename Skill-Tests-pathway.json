@@ -1,6 +1,6 @@
 {
     "title": "RHCSA Skill Tests",
-    "description": "all of the Skill Tests created to pass the RHCSA certification exam",
+    "description": "All of the Skill Tests created to pass the RHCSA certification exam",
     "courses": [
       {
         "course_id": "Skill Test 1- ssh,umask, permissions",
