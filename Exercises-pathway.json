@@ -1,7 +1,7 @@
 {
     "title": "RHCSA Hands On Exercises",
     "icon": "fa-redhat",
-    "description": "All of the exercises created to test and re-enforce RHCSA certification exam knowledge",
+    "description": "Exercises created to test and re-enforce knowledge required by the RHCSA certification",
     "courses": [
       {
         "course_id": "01. Exercise- Centos Playground",
