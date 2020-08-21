@@ -8,127 +8,106 @@
         "description": ""
       },
       {
-        "pathway_id": "RHCSA_Hands_On_Labs",
         "course_id": "02. Exercise- Locate and Find",
         "title": "2. Exercise- Locate and Find",
         "description": ""
       },
       {
-        "pathway_id": "RHCSA_Hands_On_Labs",
         "course_id": "03. Exercise- Package management",
         "title": "3. Exercise- Package management",
         "description": ""
       },
       {
-        "pathway_id": "RHCSA_Hands_On_Labs",
         "course_id": "04. Exercise- RPM",
         "title": "4. Exercise- RPM",
         "description": ""
       },
       {
-        "pathway_id": "RHCSA_Hands_On_Labs",
         "course_id": "06. Exercise- External repository",
         "title": "6. Exercise- External repository",
         "description": ""
       },
       {
-        "pathway_id": "RHCSA_Hands_On_Labs",
         "course_id": "07. Lab- Package Management",
         "title": "7. Lab- Package Management",
         "description": ""
       },
       {
-        "pathway_id": "RHCSA_Hands_On_Labs",
         "course_id": "08. Exercise- Kernel Distribution",
         "title": "8. Exercise- Kernel Distribution",
         "description": ""
       },
       {
-        "pathway_id": "RHCSA_Hands_On_Labs",
         "course_id": "09. Exercise- Systemctl and Targets",
         "title": "9. Exercise- Systemctl and Targets",
         "description": ""
       },
       {
-        "pathway_id": "RHCSA_Hands_On_Labs",
         "course_id": "10. Exercise- Compression & Archive",
         "title": "10. Exercise- Compression & Archive",
         "description": ""
       },
       {
-        "pathway_id": "RHCSA_Hands_On_Labs",
         "course_id": "11. Exercise- Users and Groups",
         "title": "11. Exercise- Users and Groups",
         "description": ""
       },
       {
-        "pathway_id": "RHCSA_Hands_On_Labs",
         "course_id": "12. Exercise - File Permissions",
         "title": "12. Exercise - File Permissions",
         "description": ""
       },
       {
-        "pathway_id": "RHCSA_Hands_On_Labs",
         "course_id": "13. Exercise Umask",
         "title": "13. Exercise Umask",
         "description": ""
       },
       {
-        "pathway_id": "RHCSA_Hands_On_Labs",
         "course_id": "14. Exercise- SSH & SCP",
         "title": "14. Exercise- SSH & SCP",
         "description": ""
       },
       {
-        "pathway_id": "RHCSA_Hands_On_Labs",
         "course_id": "15. Exercise- Networking",
         "title": "15. Exercise- Networking",
         "description": ""
       },
       {
-        "pathway_id": "RHCSA_Hands_On_Labs",
         "course_id": "16. Exercise-Storage Basics",
         "title": "16. Exercise-Storage Basics",
         "description": ""
       },
       {
-        "pathway_id": "RHCSA_Hands_On_Labs",
         "course_id": "17. Exercise- MBR-GPT-Persistence",
         "title": "17. Exercise- MBR-GPT-Persistence",
         "description": ""
       },
       {
-        "pathway_id": "RHCSA_Hands_On_Labs",
         "course_id": "18. Exercise Swap Space",
         "title": "18. Exercise Swap Space",
         "description": ""
       },
       {
-        "pathway_id": "RHCSA_Hands_On_Labs",
         "course_id": "19. Process Monitor and Renice",
         "title": "19. Exercise- Process Monitor and Renice",
         "description": ""
       },
       {
-        "pathway_id": "RHCSA_Hands_On_Labs",
         "course_id": "20. pkill-ps-top-pgrep",
         "title": "20. Exercise- pkill-ps-top-pgrep",
         "description": ""
       },
       {
-        "pathway_id": "RHCSA_Hands_On_Labs",
         "course_id": "21. Exercise- Scheduling tasks",
         "title": "21. Exercise- Scheduling tasks",
         "description": ""
       },
       {
-        "pathway_id": "RHCSA_Hands_On_Labs",
         "course_id": "22. Exercise- Chron jobs",
         "title": "22. Exercise- Chron jobs",
         "description": ""
       },
       {
-        "pathway_id": "RHCSA_Hands_On_Labs",
         "course_id": "23. Exercise- Firewalld",
         "title": "23. Exercise- Firewalld",
         "description": ""
