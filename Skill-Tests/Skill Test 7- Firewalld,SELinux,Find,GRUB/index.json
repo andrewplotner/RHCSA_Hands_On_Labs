@@ -1,0 +1,28 @@
+{
+    "title": "30. Skill Test- Firewalld/SELinux/Find/GRUB",
+    "description": "Skill Test 7",
+    "noindex": true,
+    "details": {
+        "steps": [
+            {
+                "title": "Skill Test",
+                "text": "step1.md",
+                "answer": "step1-answer.md",
+                "code": "step1-foreground.sh"
+            }
+        ],
+        "assets": {
+            "host01":
+            [
+                {"file": "verify.sh", "target": "/tmp", "chmod": "+x"}
+            ]
+        }
+    },
+    "environment": {
+        "hideintro": true,
+        "uilayout": "terminal"
+    },
+    "backend": {
+        "imageid": "rhel8-2"
+    }
+}

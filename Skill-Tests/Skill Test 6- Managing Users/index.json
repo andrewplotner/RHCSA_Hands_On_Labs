@@ -1,0 +1,22 @@
+{
+    "title": "29. Skill Test- User Management",
+    "description": "Skill Test",
+    "noindex": true,
+    "details": {
+        "steps": [
+            {
+                "title": "Skill Test",
+                "text": "step1.md",
+                "answer": "step1-answer.md",
+                "verify": "step1-verify.sh"
+            }
+        ]
+    },
+    "environment": {
+        "hideintro": true,
+        "uilayout": "terminal"
+    },
+    "backend": {
+        "imageid": "centos"
+    }
+}

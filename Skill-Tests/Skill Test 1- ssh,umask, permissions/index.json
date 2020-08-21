@@ -1,0 +1,39 @@
+{
+    "title": "24. Skill Test- ssh, umask, file permissions ",
+    "description": "Skill test",
+    "noindex": true,
+    "details": 
+    {
+        "steps": 
+        [
+            {
+                "title": "Intro",
+                "text": "step0.md",
+                "code": "foreground0.sh"
+            },
+            {
+                "title": "Skill Test",
+                "text": "step1.md",
+                "answer": "step1-answer.md",
+                "code": "foreground1.sh"
+            }
+        ],
+        "assets":
+        {
+            "host01": 
+            [
+                {"file": "deploy.sh", "target": "/tmp", "chmod": "+x"},
+                {"file": "startup.sh", "target": "/root", "chmod": "+x"}
+            ]
+        }
+     },
+    "environment": 
+    {
+        "hideintro": true,
+        "uilayout": "terminal-terminal"
+    },
+    "backend": 
+    {
+        "imageid": "kubernetes-cluster"
+    }
+}

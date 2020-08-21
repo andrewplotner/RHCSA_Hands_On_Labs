@@ -1,0 +1,32 @@
+{
+    "title": "26. Skill Test- LVM ",
+    "description": "Skill Test 3",
+    "noindex": true,
+    "details": {
+        "steps": [
+            {
+                "title": "Intro",
+                "code": "foreground.sh",
+                "text": "step0.md"
+            },
+            {
+                "title": "Skill Test",
+                "text": "step1.md",
+                "answer": "step1-answer.md"
+            }
+        ],
+        "assets": {
+            "host01":
+            [
+                {"file": "verify.sh", "target": "/tmp", "chmod": "+x"}
+            ]
+        }
+    },
+    "environment": {
+        "hideintro": true,
+        "uilayout": "terminal"
+    },
+    "backend": {
+        "imageid": "ubuntu:2004"
+    }
+}

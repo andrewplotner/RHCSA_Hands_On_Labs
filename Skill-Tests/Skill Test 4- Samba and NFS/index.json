@@ -1,0 +1,22 @@
+{
+    "title": "27. Skill Test- Samba/NFS ",
+    "description": "Set up and utilize an nfs and smb share",
+    "noindex": true,
+    "details": {
+        "steps": [
+            {
+                "title": "Step 1 - External Storage",
+                "text": "step1.md",
+                "code": "step1-foreground.sh",
+                "answer": "step1-answer.md"
+            }
+        ]
+    },
+    "environment": {
+        "hideintro": true,
+        "uilayout": "terminal-terminal"
+    },
+    "backend": {
+        "imageid": "kubernetes-cluster:1.18"
+    }
+}
