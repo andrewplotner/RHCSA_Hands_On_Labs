@@ -1,0 +1,38 @@
+{
+    "title": "17. Exercise- MBR/GPT/Persistence/NFS",
+    "description": "Practice with MBR and GPT and learn persistence. In addition set up your very first NFS share",
+    "noindex": true,
+    "details": {
+        "steps": [
+            {
+                "title": "Step 1 - MBR and GPT",
+                "text": "step1.md",
+                "code": "step1-foreground.sh",
+                "answer": "step1-answer.md"
+            },
+            {
+                "title": "Step 2 - create and mount a file system",
+                "text": "step2.md",
+                "answer": "step2-answer.md"
+            },
+            {
+                "title": "Step 3 - Make that mount persistent",
+                "text": "step3.md",
+                "answer": "step3-answer.md"
+            },
+            {
+                "title": "Step 4 - Install an NFS",
+                "text": "step4.md",
+                "answer": "step4-answer.md"
+            }
+            
+        ]
+    },
+    "environment": {
+        "hideintro": true,
+        "uilayout": "terminal-terminal"
+    },
+    "backend": {
+        "imageid": "kubernetes-cluster"
+    }
+}

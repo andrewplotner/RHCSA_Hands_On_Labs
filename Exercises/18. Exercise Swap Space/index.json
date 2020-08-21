@@ -1,0 +1,39 @@
+{
+    "title": "18. Exercise - swap space ",
+    "description": "Learning how to setup and mount a swap file",
+    "noindex": true,
+    "details": {
+        "steps": [
+            {
+                "title": "Step 1 - disable and delete swap",
+                "text": "step1.md",
+                "answer": "step1-answer.md",
+                "verify": "step1-verify.sh"
+            },
+            {
+                "title": "Step 2 - create the partition",
+                "text": "step2.md",
+                "answer": "step2-answer.md"
+            },
+            {
+                "title": "Step 3 - Format it for swap",
+                "text": "step3.md",
+                "answer": "step3-answer.md",
+                "verify": "step3-verify.sh"
+            },
+            {
+                "title": "Step 4 - Make it Persistent",
+                "text": "step4.md",
+                "answer": "step4-answer.md",
+                "verify": "step4-verify.sh"
+            }
+        ]
+    },
+    "environment": {
+        "hideintro": true,
+        "uilayout": "terminal"
+    },
+    "backend": {
+        "imageid": "ubuntu:1804"
+    }
+}

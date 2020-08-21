@@ -1,0 +1,52 @@
+{
+    "title": "16. Exercise- Storage basics ",
+    "description": "Learning the locations of all network files",
+    "noindex": true,
+    "details": {
+        "steps": [
+            {
+                "title": "Step 1 - Check basic parameters",
+                "text": "step1.md",
+                "answer": "step1-answer.md",
+                "verify": "step1-verify.sh"
+            },
+            {
+                "title": "Step 2 - create a PV",
+                "text": "step2.md",
+                "answer": "step2-answer.md",
+                "verify": "step2-verify.sh"
+            },
+            {
+                "title": "Step 3 - Create a VG",
+                "text": "step3.md",
+                "answer": "step3-answer.md",
+                "verify": "step3-verify.sh"
+            },
+            {
+                "title": "Step 4 - Create an LV",
+                "text": "step4.md",
+                "answer": "step4-answer.md",
+                "verify": "step4-verify.sh"
+            },
+            {
+                "title": "Step 5 - Create a FileSystem",
+                "text": "step5.md",
+                "answer": "step5-answer.md",
+                "verify": "step5-verify.sh"
+            },
+            {
+                "title": "Step 6 - Resize logical volume",
+                "text": "step6.md",
+                "answer": "step6-answer.md",
+                "verify": "step6-verify.sh"
+            }
+        ]
+    },
+    "environment": {
+        "hideintro": true,
+        "uilayout": "terminal"
+    },
+    "backend": {
+        "imageid": "ubuntu:1804"
+    }
+}

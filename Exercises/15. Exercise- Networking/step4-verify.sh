@@ -1,0 +1,1 @@
+OUT=$( cat /etc/resolve.conf | grep 1.1.1.1 ) && [[ $OUT == ipv4.dns* ]] && echo done
