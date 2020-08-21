@@ -1,5 +1,6 @@
 {
     "title": "RHCSA Skill Tests",
+    "icon": "fa-redhat",
     "description": "All of the Skill Tests created to pass the RHCSA certification exam",
     "courses": [
       {
