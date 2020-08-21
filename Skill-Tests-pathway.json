@@ -1,7 +1,7 @@
 {
     "title": "RHCSA Skill Tests",
     "icon": "fa-redhat",
-    "description": "All of the Skill Tests created to pass the RHCSA certification exam",
+    "description": "Skill Tests created to test the knowledge necessary to pass the RHCSA certification exam",
     "courses": [
       {
         "course_id": "Skill Test 1- ssh,umask, permissions",
