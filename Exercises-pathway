@@ -1,6 +1,6 @@
 {
     "title": "RHCSA Hands On Exercises",
-    "description": "all of the labs created to pass the RHCSA certification exam",
+    "description": "All of the exercises created to test and re-enforce RHCSA certification exam knowledge",
     "courses": [
       {
         "course_id": "01. Exercise- Centos Playground",
