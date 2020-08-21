@@ -1,5 +1,6 @@
 {
     "title": "RHCSA Hands On Exercises",
+    "icon": "fa-redhat",
     "description": "All of the exercises created to test and re-enforce RHCSA certification exam knowledge",
     "courses": [
       {
