@@ -1,0 +1,46 @@
+{
+    "title": "Deprecated: 5. Exercise- Local repository",
+    "description": "Learn how to setup a local repository",
+    "noindex": true,
+    "details": {
+        "steps": [
+            {
+                "title": "Step 1 - Mount ISO",
+                "text": "step1.md",
+                "answer": "step1-answer.md"
+            },
+            {
+                "title": "Step 2 - Repo Config",
+                "text": "step2.md",
+                "answer": "step2-answer.md"
+            },
+            {
+                "title": "Step 3 - Disable or delete other repos",
+                "text": "step3.md",
+                "answer": "step3-answer.md"
+            },
+            {
+                "title": "Step 4 - confirm",
+                "text": "step4.md",
+                "answer": "step4-answer.md"
+            },
+            {
+                "title": "Step 5 - install",
+                "text": "step5.md",
+                "answer": "step5-answer.md"
+            },
+            {
+                "title": "Step 6 - uninstall",
+                "text": "step6.md",
+                "answer": "step6-answer.md"
+            }
+        ]
+    },
+    "environment": {
+        "hideintro": true,
+        "uilayout": "terminal"
+    },
+    "backend": {
+        "imageid": "rhel8-2"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "noindex": true,
+    "title": "4. Exercise- RPM",
+    "description": "Learn the basics of the RPM",
+    "details": {
+        "steps": [
+            {
+                "title": "download with RPM",
+                "text": "step1.md",
+                "answer": "step1-answer.md",
+                "verify": "step1-verify.sh"
+            },
+            {
+                "title": "Query with RPM",
+                "text": "step2.md"
+            },
+            {
+                "title": "Remove package with RPM",
+                "text": "step3.md",
+                "answer": "step3-answer.md",
+                "verify": "step3-verify.sh"
+            }
+        ]
+    },
+    "environment": {
+        "hideintro": true,
+        "uilayout": "terminal"
+    },
+    "backend": {
+        "imageid": "centos"
+    }
+}

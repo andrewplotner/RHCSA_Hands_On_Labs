@@ -1,0 +1,1 @@
+Decompress the star archive into the /root home directory

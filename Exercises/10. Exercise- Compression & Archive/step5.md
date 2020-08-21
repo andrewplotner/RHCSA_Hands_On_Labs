@@ -1,0 +1,1 @@
+Using star, create an archive of the contents of the newly-created log directory in /root/var/log into a file called "user-logs.tar". Be sure to preserve the entire path structure so that the archive indicates exactly where the file belonged. i.e. /root/var/log should pre-ceed every file in the archive.
