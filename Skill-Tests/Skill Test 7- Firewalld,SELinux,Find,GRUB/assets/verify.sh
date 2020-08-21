@@ -57,13 +57,10 @@ FCHECK=$( cat /root/old-files | grep "/rpc" )
 
 comparison $FCHECK "/etc/rpc" "4"
 
-echo "timeout=15" > /root/verify
-echo "timeout=15" >> /root/verify
-VERIFY=$( cat /root/verify)
-
 GCHECK=$( cat /boot/grub2/grub.cfg | grep "timeout=15" | awk '{print $2}' )
+VERIFY=$( echo $GCHECK | awk '{print $1}' )
 
-comparison $GCHECK "$VERIFY" "5"
+comparison $VERIFY "timeout=15" "5"
 
 
 print_color "green" "You Freaking Rock "
