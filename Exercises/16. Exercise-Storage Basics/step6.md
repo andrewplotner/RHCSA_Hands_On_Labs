@@ -3,3 +3,4 @@
 <pre> Resize the Logical Volume using the PE *hint use vgdisplay to inform you how much free PE is there</pre>
 <pre> grow the filesystem to take advantage of the new space </pre>
 
+verify: `OUT=$( df -hP /mnt/media | grep Professor | awk '{print $2}' ) && [[ $OUT == 18G ]] && echo done`{{execute}}
