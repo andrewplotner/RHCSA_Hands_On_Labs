@@ -18,8 +18,7 @@
             {
                 "title": "Step 3 - Start and renice a service",
                 "text": "step3.md",
-                "answer": "step3-answer.md",
-                "verify": "step3-verify.sh"
+                "answer": "step3-answer.md"
 
             }
         ]
