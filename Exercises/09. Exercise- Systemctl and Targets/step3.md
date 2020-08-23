@@ -6,7 +6,7 @@
 >>Q2: how many are there?<<
 =~= *
 
->>Q3: What is the status of the ssh.service?<<
+>>Q3: What is the status of the sshd.service?<<
 (*) active (running)
 ( ) active (exited)
 ( ) inactive (dead)
