@@ -37,8 +37,7 @@
             {
                 "title": "Step 6 - Resize logical volume",
                 "text": "step6.md",
-                "answer": "step6-answer.md",
-                "verify": "step6-verify.sh"
+                "answer": "step6-answer.md"
             }
         ]
     },
