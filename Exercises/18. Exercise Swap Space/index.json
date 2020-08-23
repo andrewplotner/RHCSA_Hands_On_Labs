@@ -24,8 +24,7 @@
             {
                 "title": "Step 4 - Make it Persistent",
                 "text": "step4.md",
-                "answer": "step4-answer.md",
-                "verify": "step4-verify.sh"
+                "answer": "step4-answer.md"
             }
         ]
     },
