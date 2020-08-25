@@ -20,7 +20,4 @@
 
 <pre> Set up an interface connection that is only available to a single new user `mary`. add mary as a user on the machine, set your my-connection to not `autoconnect` and set this connection to only be visable by mary </pre>
 
-nmcli con mod id my-connection connection.autoconnect no
-nmcli con mod id my-connection connection.permissions mary
-
 verify with: `AUTO=$( nmcli con show my-connection | awk '/connection.autoconnect:/ {print $2}' ); USER=$(nmcli con show my-connection | awk '/connection.permissions:/ {print $2}' ); [[ $AUTO == no ]] && [[ $USER == user:mary ]] && echo "Awesome Job" || echo "Try Again"`{{execute}}
