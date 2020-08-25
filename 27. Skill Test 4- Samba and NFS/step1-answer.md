@@ -34,6 +34,12 @@ $ mkdir /mnt/nfs
 $ showmount -e (ip of host1)
 $ mount -t nfs (IP of host1):/nfs /mnt/nfs
 $ echo "(IP of host1):/nfs  /mnt/nfs  nfs defaults 0 0" >> /etc/fstab
+
+for autofs
+vi /etc/auto.master.d/nfs.autofs
+	/mnt	/etc/auto.nfs
+vi /etc/auto.nfs
+	/nfs	fstype=nfs,rw	(IP of host1):/nfs
 </<pre>
 
 
