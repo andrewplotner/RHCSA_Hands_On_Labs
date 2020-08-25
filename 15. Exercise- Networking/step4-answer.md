@@ -1,6 +1,6 @@
-<pre> echo "140.82.118.4 github.com" >> /etc/hosts </pre>
 
-
+nmcli con mod id my-connection connection.autoconnect no
+nmcli con mod id my-connection connection.permissions mary
 
 
 
