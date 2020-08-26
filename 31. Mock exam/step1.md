@@ -36,5 +36,5 @@ Make sure that SELinux is set to enforcing mode
 Objective 3 
 Set hostname to "district.example.com" , set the static ip to 172.17.0.20 with a netmask of 255.255.255.0, a gateway of 172.17.0.254, and a DC of 172.17.0.254
 
- >>Q5. Once these changes are made, what must be done? <<
+ >>Q5. Once these changes are made, what must be done to either the service or the system? <<
  =~= restart
