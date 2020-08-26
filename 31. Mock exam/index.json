@@ -1,0 +1,33 @@
+{
+    "title": "31. Mock Exam",
+    "description": "RHCSA Mock Exam",
+    "noindex": true,
+    "details": {
+        "steps": [
+            {
+                "title": "Avoid Cascading Failure",
+                "text": "step1.md",
+                "answer": "step1-answer.md",
+                "code": "step1-foreground.sh"
+            },
+            {
+                "title": "Knock out rest of Objectives",
+                "text": "step2.md",
+                "answer": "step2-answer.md"
+            }
+        ],
+        "assets": {
+            "host01":
+            [
+                {"file": "verify.sh", "target": "/tmp", "chmod": "+x"}
+            ]
+        }
+    },
+    "environment": {
+        "hideintro": true,
+        "uilayout": "terminal"
+    },
+    "backend": {
+        "imageid": "rhel8-2"
+    }
+}
