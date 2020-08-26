@@ -7,13 +7,13 @@
             {
                 "title": "Avoid Cascading Failure",
                 "text": "step1.md",
-                "answer": "step1-answer.md",
+                "answer": "step1-answers.md",
                 "code": "step1-foreground.sh"
             },
             {
                 "title": "Knock out rest of Objectives",
                 "text": "step2.md",
-                "answer": "step2-answer.md"
+                "answer": "step2-answers.md"
             }
         ],
         "assets": {
