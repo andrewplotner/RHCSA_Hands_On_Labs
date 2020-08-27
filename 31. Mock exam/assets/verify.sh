@@ -74,7 +74,7 @@ comparison $YUM "http://district.example.com/repo/rhel7" "4"
 #
 ##Objective 5
 
-SWAP=$( lsblk | awk '/swap/ {print $4}' )
+SWAP=$( lsblk | awk '/swap / {print $4}' )
 comparison $SWAP "500M" "5"
 
 #
