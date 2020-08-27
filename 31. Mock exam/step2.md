@@ -82,6 +82,7 @@ Deny user sasha to create cron jobs for herself.
 
 Search for text `strato` in a file /usr/share/dict/words and copy this to a file /root/lines.txt. The new file should not have any blank spaces or lines. The order of the names in the new file should be the same as the original file. 
 
+## Verify
 
 Run the verification to confirm objectives 1-22 have been accomplished before proceeding to objective 23 as it may break the box. `bash /tmp/verify.sh`{{execute}}
 
