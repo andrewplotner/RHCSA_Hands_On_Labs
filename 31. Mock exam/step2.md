@@ -21,12 +21,13 @@ Secure `/data` such that `only` group `sysadmin` can access it. Group owner shou
 
 ## Objective 9
 
+vim the full authconfig command you would run in `/root/authconfig.test` for the following requirements
 Configure an ldap client, where your ldap server is `station.district.example.com`, LDAP Base DN: `dc=station,dc=district,dc=example,dc=com`. Authenticate your ldap server using the certificate `https://classroom.example.com/pub/example-ca.crt`
 
 >>Q1 what command do you need to run to utilize the GUI version of setting up LDAP?<<
 === authconfig-gtk
 
-vim the full authconfig command you would run in `/file/authconfig.test` and run the following command to verify if the what you wrote is correct `file1=$(cat /root/authconfig.test); file2=$(cat /tmp/authconfig.verify) ; [[ $file1 == $file2 ]] && echo "Awesome Job" || echo "Open up /tmp/authconfig.verify to see what you might have missed."`{{execute}}
+Run the following command to verify if the what you wrote is correct `file1=$(cat /root/authconfig.test); file2=$(cat /tmp/authconfig.verify) ; [[ $file1 == $file2 ]] && echo "Awesome Job" || echo "Open up /tmp/authconfig.verify to see what you might have missed."`{{execute}}
 
 ## Objective 10
 
