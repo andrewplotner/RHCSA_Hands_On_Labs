@@ -91,14 +91,14 @@ comparison $NATASHA "/sbin/nologin" "6-Natasha-nologin"
 
 #
 ##Objetive 7
-
-PERM=$( ls -l /var/tmp | awk '/fstab/ {print $1}' )
+cd /var/tmp
+PERM=$( ls -l  | awk '/fstab/ {print $1}' )
 comparison $PERM *r*-r*-r*-+ "7-Base Permissions"
 
-SPERM=$( getfacl /var/tmp/fstab | awk -F: '/susan/ {print $3}' )
+SPERM=$( getfacl fstab | awk -F: '/susan/ {print $3}' )
 comparison $SPERM "---" "7-Susan Permissions" 
 
-NPERM=$( getfacl /var/tmp/fstab | awk -F: '/natasha/ {print $3}')
+NPERM=$( getfacl fstab | awk -F: '/natasha/ {print $3}')
 comparison $NPERM "rw-" "7- Natasha Permissions" 
 
 #
@@ -159,8 +159,8 @@ comparison $CONFB "481" "15 B) bzip"
 #
 ##Objective 16
 
-UID=$( id jean | awk '{print $1}' )
-comparison $UID "*3564*" "16" 
+JANEUID=$( id jean | awk '{print $1}' )
+comparison $JANEUID "*3564*" "16" 
 
 #
 ##Objective 17
