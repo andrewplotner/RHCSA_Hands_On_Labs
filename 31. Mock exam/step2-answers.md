@@ -1,22 +1,20 @@
+## Objective 4
 <pre>
-
-## **Objective 4**
-
 # vim /etc/yum.repos.d/master.repo
 [master]
 name=base
 baseurl=http://district.example.com/repo/rhel7
 enabled=1
 gpgcheck=0
+</pre> 
  
- 
-## **Objective 5**
-
+## Objective 5
+<pre>
 # df -h
 # lvreduce -L 500M /dev/mapper/rhel-swap
-
-## **Objective 6**
-
+</pre> 
+## Objective 6
+<pre>
 # groupadd sysadmin
 # useradd -G sysadmin susan
 # useradd -G sysadmin harry
@@ -24,23 +22,23 @@ gpgcheck=0
 # passwd susan
 # passwd harry
 # passwd natasha
-
-## **Objective 7**
-
+</pre> 
+## Objective 7
+<pre>
 # cp /etc/fstab /var/tmp/fstab
 # chown root:root /var/tmp/fstab
 # chmod +r -x /var/tmp/fstab
 # setfacl -m u:susan:-- /var/tmp/fstab
 # setfacl -m u:natasha:rw /var/tmp/fstab	
-
-## **Objective 8**
-
+</pre> 
+## Objective 8
+<pre>
 # mkdir /data
 # chown :sysadmin /data
 # chmod 2070 /data
-
-## **Objective 9**
-
+</pre> 
+## Objective 9
+<pre>
 These are the full commands needed to add an LDAP server to the machine
 
 # yum install authconfig nss-pam-ldapd pam_krb5 nfs_utils autofs openldap-clients sssd
@@ -53,24 +51,24 @@ or
 # systemctl isolate graphical.target
 # authconfig-gtk
 Input everything in the GUI
-
-## **Objective 10**
-
+</pre> 
+## Objective 10
+<pre>
 # vim /etc/chrony.conf
 replace time servers with this one. 
 # systemctl restart chronyd
-
-## **Objective 11**
-
+</pre> 
+## Objective 11
+<pre>
 # vim /etc/auto.master.d/home.autofs
 /netdir /etc/auto.home
 # vim /etc/auto.home
 *   -fstype=nfs,rw,sync    station.district.example.com:/home/guests/&
 #systemctl enable autofs 
 #systemctl restart autofs
-
-## **Objective 12**
-
+</pre> 
+## Objective 12
+<pre>
 # vim /etc/yum.repos.d/kernel.repo
 [kernel-repo]
 name=kernel repository
@@ -84,9 +82,9 @@ gpgcheck=0
 to confirm that the new kernel is present in there. 
 # grubby --info=ALL
 # grubby --set-default-index=(# of new kernel)
-
-## **Objective 13**
-
+</pre> 
+## Objective 13
+<pre>
 # vim /etc/cron.d/susan-job
 23 14 * * * susan /bin/echo hiya
 or
@@ -94,9 +92,9 @@ or
 # crontab -e -u susan
 
 23 14 * * *  /bin/echo hiya
-
-## **Objective 14**
-
+</pre> 
+## Objective 14
+<pre>
 # lcreate -L 512M -n swap2 rhel
 # mkswap /dev/rhel-swap2
 # swapoff -a
@@ -104,9 +102,9 @@ or
 UUID=(uuid) swap swap defaults 0 0 
 # swapon -a
 # swapon -s     to verify
-
-## **Objective 15**
-
+</pre> 
+## Objective 15
+<pre>
 # mkdir /configbackup
 # yum install rsync -y
 # rsync -parv /etc  /configbackup
@@ -117,44 +115,44 @@ UUID=(uuid) swap swap defaults 0 0
 # yum install bzip2 -y
 # tar -cjvf /root/archive.tar.bz2 /usr/local
 
-
-## **Objective 16**
-
+</pre> 
+## Objective 16
+<pre>
 # useradd -u 3564 jean
-
-## **Objective 17**
-
+</pre> 
+## Objective 17
+<pre>
 # cd home
 # mklost+found
 # find / -user sasha -exec cp -vp {} /home/lost+found/ \;
-
-## **Objective 18**
-
+</pre> 
+## Objective 18
+<pre>
 # lvcreate -l 100 -n lvmgroup rhel
 # mkfs -t ext4 /dev/mapper/v2group-lvmgroup
 # mkdir /mnt/lvm2
 # echo "UUID=(uuid) /mnt/lvm2 ext4 defaults 0 0" >> /etc/fstab
 # mount -a
-
-## **Objective 19**
-
+</pre> 
+## Objective 19
+<pre>
 # mkdir -p /home/student/
 # head -n 12 /usr/bin/clean-binary-files > /home/student/headtail.txt
-
-## **Objective 20**
-
+</pre> 
+## Objective 20
+<pre>
 # echo "journalctl --since 09:05:00 --until 09:15:00" >> /home/student/systemdreview.txt
-
-## **Objective 21**
-
+</pre> 
+## Objective 21
+<pre>
 # echo "sasha" >> /etc/cron.deny
-
-## **Objective 22**
-
+</pre> 
+## Objective 22
+<pre>
 # grep "strato" /usr/share/dict/words > /root/lines.txt
-
-## **Objective 23**
-
+</pre> 
+## Objective 23
+<pre>
 # yum install vdo -y
 # systemctl start vdo ; systemctl enable vdo
 # lvcreate -L 7G -n vdo rhel
