@@ -27,9 +27,9 @@ vim the full authconfig command you would run in `/file/authconfig.test` and run
 </pre>
 **<pre>Objective 11</pre>**
 <pre>Home directories for your LDAP users should be automatically mounted on acces. These home directories are served from the NFS share "station.district.example.com:/home/guests/"
-
+</pre>
 verify by comparing your actions to the commands in this file:`cat /tmp/ldap.homedir`{{execute}}
- </pre>
+
 **<pre>Objective 12</pre>**
 <pre>Add a repository `"http://district.example.com/repo/errata"` with the name `Kernel.repo`. Then check for a new kerenl and install if there is one. The newly installed kernel should be the default kernel and the previous kernel should be available and bootable at grub. 
 </pre>
@@ -62,9 +62,7 @@ verify by comparing your actions to the commands in this file:`cat /tmp/ldap.hom
 </pre>
 **<pre>Objective 22</pre>**
 <pre>Search for text `strato` in a file /usr/share/dict/words and copy this to a file /root/lines.txt. The new file should not have any blank spaces or lines. The order of the names in the new file should be the same as the original file. </pre>
-
-<pre>Run the verification to confirm objectives 1-22 have been accomplished before proceeding to objective 23 as it may break the box. `bash /tmp/verifyscript`{{execute}}
-</pre>
+Run the verification to confirm objectives 1-22 have been accomplished before proceeding to objective 23 as it may break the box. `bash /tmp/verifyscript`{{execute}}
 **<pre>Objective 23</pre>**
 <pre>reduce the rhel-root lvm to 30G, create a 7G lvm named vdo and place a 15GB vdo named lucky onto the LVM. Then give the VDO an XFS file system and mount it persistently to /mnt/vdo
 </pre>
