@@ -1,6 +1,5 @@
 setenforce 0
-echo 'authconfig --enable --enableauth --ldapserver=ldap://station.district.example.com --ldapbasedn="dc=station,dc=district,dc=example,dc=com" --enableldaptls
---ldaploadcacert=https://classroom.example.com/pub/example-ca.crt --update' > /tmp/authconfig.verify
+echo 'authconfig --enable --enableauth --ldapserver=ldap://station.district.example.com --ldapbasedn="dc=station,dc=district,dc=example,dc=com" --enableldaptls --ldaploadcacert=https://classroom.example.com/pub/example-ca.crt --update' > /tmp/authconfig.verify
 
 echo '# vim /etc/auto.master.d/home.autofs' > /tmp/ldap.homedir
 echo '/netdir /etc/auto.home' >>  /tmp/ldap.homedir
