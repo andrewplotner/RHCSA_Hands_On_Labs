@@ -21,47 +21,47 @@ mv file2 /home/rhel/file2
 mv file3 /home/packer/file3
 mv file4 /home/sasha/file4
 
-echo "Yes" > /usr/shar/dict/words
-echo "Yes" >> /usr/shar/dict/words
-echo "Yes" >> /usr/shar/dict/words
-echo "Yes" >> /usr/shar/dict/words
-echo "Yes" >> /usr/shar/dict/words
-echo "Yes" >> /usr/shar/dict/words
-echo "Yes" >> /usr/shar/dict/words
-echo "Yes" >> /usr/shar/dict/words
-echo "Yes" >> /usr/shar/dict/words
-echo "Yes" >> /usr/shar/dict/words
-echo "Yes" >> /usr/shar/dict/words
-echo "Yes" >> /usr/shar/dict/words
-echo "NO" >> /usr/shar/dict/words
-echo "NO" >> /usr/shar/dict/words
-echo "NO" >> /usr/shar/dict/words
-echo "NO" >> /usr/shar/dict/words
-echo "NO" >> /usr/shar/dict/words
-echo "NO" >> /usr/shar/dict/words
-echo "NO" >> /usr/shar/dict/words
-echo "NO" >> /usr/shar/dict/words
-echo "NO" >> /usr/shar/dict/words
-echo "NO" >> /usr/shar/dict/words
-echo "NO" >> /usr/shar/dict/words
-echo "NO" >> /usr/shar/dict/words
-echo "NO" >> /usr/shar/dict/words
-echo "NO" >> /usr/shar/dict/words
-echo "Strato you shouldnt have done non case sensitive" >> /usr/shar/dict/words
-echo "NO" >> /usr/shar/dict/words
-echo "NO" >> /usr/shar/dict/words
-echo "NO" >> /usr/shar/dict/words
-echo "NO" >> /usr/shar/dict/words
-echo "NO" >> /usr/shar/dict/words
-echo "strato, YES you have done well" >> /usr/shar/dict/words
-echo "NO" >> /usr/shar/dict/words
-echo "NO" >> /usr/shar/dict/words
-echo "NO" >> /usr/shar/dict/words
-echo "NO" >> /usr/shar/dict/words
-echo "NO" >> /usr/shar/dict/words
-echo "NO" >> /usr/shar/dict/words
-echo "NO" >> /usr/shar/dict/words
-echo "NO" >> /usr/shar/dict/words
+echo "Yes" > /usr/share/dict/words
+echo "Yes" >> /usr/share/dict/words
+echo "Yes" >> /usr/share/dict/words
+echo "Yes" >> /usr/share/dict/words
+echo "Yes" >> /usr/share/dict/words
+echo "Yes" >> /usr/share/dict/words
+echo "Yes" >> /usr/share/dict/words
+echo "Yes" >> /usr/share/dict/words
+echo "Yes" >> /usr/share/dict/words
+echo "Yes" >> /usr/share/dict/words
+echo "Yes" >> /usr/share/dict/words
+echo "Yes" >> /usr/share/dict/words
+echo "NO" >> /usr/share/dict/words
+echo "NO" >> /usr/share/dict/words
+echo "NO" >> /usr/share/dict/words
+echo "NO" >> /usr/share/dict/words
+echo "NO" >> /usr/share/dict/words
+echo "NO" >> /usr/share/dict/words
+echo "NO" >> /usr/share/dict/words
+echo "NO" >> /usr/share/dict/words
+echo "NO" >> /usr/share/dict/words
+echo "NO" >> /usr/share/dict/words
+echo "NO" >> /usr/share/dict/words
+echo "NO" >> /usr/share/dict/words
+echo "NO" >> /usr/share/dict/words
+echo "NO" >> /usr/share/dict/words
+echo "Strato you shouldnt have done non case sensitive" >> /usr/share/dict/words
+echo "NO" >> /usr/share/dict/words
+echo "NO" >> /usr/share/dict/words
+echo "NO" >> /usr/share/dict/words
+echo "NO" >> /usr/share/dict/words
+echo "NO" >> /usr/share/dict/words
+echo "strato, YES you have done well" >> /usr/share/dict/words
+echo "NO" >> /usr/share/dict/words
+echo "NO" >> /usr/share/dict/words
+echo "NO" >> /usr/share/dict/words
+echo "NO" >> /usr/share/dict/words
+echo "NO" >> /usr/share/dict/words
+echo "NO" >> /usr/share/dict/words
+echo "NO" >> /usr/share/dict/words
+echo "NO" >> /usr/share/dict/words
 
 clear
 
