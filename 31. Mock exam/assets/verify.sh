@@ -166,14 +166,14 @@ comparison $JANEUID "*3564*" "16"
 #
 ##Objective 17
 
-FIND=$( ls /home/lost+found )
+FIND=$( ls -l /home/lost+found | awk '/file3/ {print $9}' )
 
 comparison $FIND *file3* "17"
 
 #
 ##Objective 18
 
-LVM2=$( cat /etc/fstab | awk '/lvm2/ {print $3}' ) )
+LVM2=$( cat /etc/fstab | awk '/lvm2/ {print $3}' ) 
 comparison $LVM2 "ext4" "18"
 
 #
@@ -186,7 +186,7 @@ comparison $HEAD "Hoorah" "19"
 ##Objective 20
 
 JOURNAL=$( journalctl --since 09:05:00 --until 09:15:00 )
-VERIFY= $( cat /home/student/systemreview.txt )
+VERIFY=$( cat /home/student/systemdreview.txt )
 V1=$( echo $JOURNAL | awk '{print $7 $13}' )
 V2=$( echo $VERIFY | awk '{print $7 $13}' )
 [[ $V1 == $V2 ]] && CHECK=$( echo 1 ) || CHECK=$( echo 0)
