@@ -26,7 +26,7 @@ vim the full authconfig command you would run in `/file/authconfig.test` and run
 <pre>Configure your NTP server to synchronize with `station.district.example.com`
 </pre>
 **<pre>Objective 11</pre>**
-<pre>You can use the user ldapuser(#) with the passwd "password". Home directories for your LDAP users should be automatically mounted on acces. These home directories are served from the NFS share "station.district.example.com:/home/guests/"
+<pre>Home directories for your LDAP users should be automatically mounted on acces. These home directories are served from the NFS share "station.district.example.com:/home/guests/"
 
 verify by comparing your actions to the commands in this file:`cat /tmp/ldap.homedir`{{execute}}
  </pre>
