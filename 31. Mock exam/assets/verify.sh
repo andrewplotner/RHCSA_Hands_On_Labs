@@ -37,34 +37,174 @@ fi
 #
 ####Body of Code ####
 #
-PUBCHECK=$( firewall-cmd --zone=public --list-all | grep "80/tcp" | awk '{print $2}')
+##Objective 1
 
-comparison ${PUBCHECK} "80/tcp" "1-public"
+comparison "1" "1" "1"
 
-DENYCHECK=$( firewall-cmd --zone=block --list-all | grep "sources" | awk '{print $2}' )
+#
+##Objective 2
 
-comparison "${DENYCHECK}" "185.56.21.2" "1-block" 
+SELinux=$( getenforce )
+comparison "${SELinux}" "Enforcing" "2" 
 
-HTTPDCHECK=$( cat /etc/httpd/conf/httpd.conf | grep "DocumentRoot " | awk '{print $2}' )
+#
+##Objective 3
 
-comparison $HTTPDCHECK "*/var/web*" "2" 
+HOST=$( hostname )
+comparison $HOST "district.example.com" "3-Hostname" 
 
-CURLCHECK=$( curl localhost/index.html )
+IP=$( cat /etc/sysconfig/network-scripts/ifcfg-ens3 | awk -F= '/IPADDR/ {print $2 }')
+comparison $IP "*172.17.0.20" "3-IP" 
 
-comparison $CURLCHECK "this was made in /root" "3"
+NET=$( nmcli con show "System ens3" | awk '/ipv4.addresses:/ { print $2}' )
+comparison $NET "*172.17.0.20/24" "3-Netmask" 
 
-FCHECK=$( cat /root/old-files | grep "/rpc" )
+GW=$( cat /etc/sysconfig/network-scripts/ifcfg-ens3 | awk -F= '/GATEWAY/ {print $2 }' )
+comparison $GW "172.17.0.254" "3-Gateway" 
 
-comparison $FCHECK "/etc/rpc" "4"
+DNS=$( cat /etc/sysconfig/network-scripts/ifcfg-ens3 | awk -F= '/DNS1/ {print $2 }' )
+comparison $DNS "*172.17.0.254" "3-Nameserver" 
 
-echo "timeout=15" > /root/verify
-echo "timeout=15" >> /root/verify
-VERIFY=$( cat /root/verify)
+#
+##Objective 4
 
-GCHECK=$( cat /boot/grub2/grub.cfg | grep "timeout=15" | awk '{print $2}' )
+YUM=$( grep "http://district.example.com/repo/rhel7" -r /etc/yum.repos.d | awk -F= '{print $2}')
+comparison $YUM "http://district.example.com/repo/rhel7" "4"
 
-comparison $GCHECK "$VERIFY" "5"
+#
+##Objective 5
+
+SWAP=$( lsblk | awk '/swap/ {print $4}' )
+comparison $SWAP "500M" "5"
+
+#
+##Objective 6
+
+USER=$( cat /etc/group | awk -F: '/sysadmin/ {print $4}')
+comparison $USER *harry* "6-Harry-sysadmin"
+
+USER=$( cat /etc/group | awk -F: '/sysadmin/ {print $4}')
+comparison $USER *susan* "6-Susan-sysadmin"
+
+NATASHA=$( cat /etc/passwd | awk -F: '/natasha/ {print $7})
+comparison $NATASHA "/sbin/nologin" "6-Natasha-nologin"
+
+#
+##Objetive 7
+
+PERM=$( ll /var/tmp | awk '/fstab/ {print $1} )
+comparison $PERM *r*-r*-r*-+ "7-Base Permissions"
+
+SPERM=$( getfacl /var/tmp/fstab | awk -F:'/susan/ {print $3}' )
+comparison $SPERM "---" "7-Susan Permissions" 
+
+NPERM=$( getfacl /var/tmp/fstab | awk -F: '/natasha/ {print $3}')
+comparison $NPERM "rw-" "7- Natasha Permissions" 
+
+#
+##Objective 8
+
+SBITS=$( ll / | awk '/data/ {print $1} )
+comparison $SBITS d---rws---* "8- Special Bits"
+
+GOWN=$( ll / | awk '/data/ {print $4}' )
+comparison $GOWN sysadmin "8- Group ownership"
+
+#
+##Objective 9
+
+comparison 1 1 "9 LDAP self-checked"
+
+#
+##Objective 10
+
+NTP=$( grep "station.district.example.com" /etc/chrony.conf | awk '{print $1} ' )
+comparison $NTP "server" "10"
+
+#
+#
+Objective 11
+
+comparison 1 1 "11 Home-Dir self-checked"
+
+#
+##Objective 12
+
+YUM1=$( grep "http://district.example.com/repo/errata" -r /etc/yum.repos.d | awk -F= '{print $2}')
+comparison $YUM1 "http://district.example.com/repo/errata" "4"
+
+KERNEL=$( grubby --default-index )
+comparison $KERNEL "2" "12" 
+
+#
+##Objective 13
+
+CRON=$( grep "/bin/echo" -r /etc/cron* |  awk -F/ '/susan/ {print $2}' )
+comparison $CRON "etc" "13"
+
+#
+##Objective 14
+
+SWAP2=$( lvdisplay /dev/rhel/swap2 | awk '/LV Size/ {print $3})
+comparison $SWAP2 "512.00" "14"
+
+#
+##Objective 15
+
+CONFA=$( ll /tmp/configcompare/configbackup/ | awk '/etc/ {print $5}' )
+comparison $CONFA "8192" "15- A) config compare" 
+
+CONFB=$( ll /root | awk '/archive.tar.bz2/ { print $5}' )
+comparison $CONFB "481" "15 B) bzip"
+
+#
+##Objective 16
+
+UID=$( id jean | awk '{print $1}' )
+comparison $UID "*3564*" "16" 
+
+#
+##Objective 17
+
+FIND=$( ls /hom/lost+found )
+
+comparison $FIND *file3* "17"
+
+#
+##Objective 18
+
+LVM2=$( cat /etc/fstab | awk '/lvm2/ {print $3}' ) )
+comparison $LVM2 "ext4" "18"
+
+#
+##Objective 19
+
+HEAD=$( awk '/Hoorah/ {print $1}' /home/student/headtail.txt)
+comparison $HEAD "Hoorah" "19"
+
+#
+##Objective 20
+
+JOURNAL=$( journalctl --since 09:05:00 --until 09:15:00 )
+VERIFY= $( cat /home/student/systemreview.txt )
+V1=$( echo $JOURNAL | awk '{print $7 $13}' )
+V2=$( echo $VERIFY | awk '{print $7 $13}' )
+[[ $V1 == $V2 ]] && CHECK=$( echo 1 ) || CHECK=$( echo 0)
+comparison $CHECK "1" "20"
+
+#
+##Objective 21
+
+DENY=$( cat /etc/cron.deny | grep sasha)
+comparison $DENY "sasha" "21"
+
+#
+##Objective 22
+
+GREP=$( awk '/YES/ {print $2}' /root/lines.txt  )
+comparison $GREP "YES" "22" 
 
 
 print_color "green" "You Freaking Rock "
 
+print_color "green" "Continue on to Objective 23"
