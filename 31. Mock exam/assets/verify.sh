@@ -144,16 +144,16 @@ comparison $CRON "etc" "13"
 #
 ##Objective 14
 
-SWAP2=$( lvdisplay /dev/rhel/swap2 | awk '/LV Size/ {print $3})
+SWAP2=$( lvdisplay /dev/rhel/swap2 | awk '/LV Size/ {print $3}')
 comparison $SWAP2 "512.00" "14"
 
 #
 ##Objective 15
 
-CONFA=$( ll /tmp/configcompare/configbackup/ | awk '/etc/ {print $5}' )
+CONFA=$( ls -l /tmp/configcompare/configbackup/ | awk '/etc/ {print $5}' )
 comparison $CONFA "8192" "15- A) config compare" 
 
-CONFB=$( ll /root | awk '/archive.tar.bz2/ { print $5}' )
+CONFB=$( ls -l /root | awk '/archive.tar.bz2/ { print $5}' )
 comparison $CONFB "481" "15 B) bzip"
 
 #
