@@ -54,7 +54,7 @@ Create a `swap` partition of `512MB` utilizing a LV called `swap2`
 
 Synchronize the `/etc` directory tree to the `/configbackup` directory  A) create an archive named `/root/configuration-backup-server.tar.gz` with the `/configbackup` directory as content. Extract the contents of the  `/root/configuration-backup-server.tar.gz` to the `/tmp/configcompare` directory.  B) create an archive `/root/archive.tar.bz2` with the `/usr/local directory` as content. 
 
-Objective 
+## Objective 16
 
 Add a user `jean` with user id of `3564`
 
