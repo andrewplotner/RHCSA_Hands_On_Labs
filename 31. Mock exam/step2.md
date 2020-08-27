@@ -20,7 +20,7 @@ Configure an ldap client, where your ldap server is `station.district.example.co
 >>Q1 what command do you need to run to utilize the GUI version of setting up LDAP?<<
 === authconfig-gtk
 
-vim the full authconfig command you would run in /`file/authconfig.test` and run the following command to verify if the what you wrote is correct `file1=$(cat /root/authconfig.test); file2=$(cat /tmp/authconfig.verify) ; [[ $file1 == $file2 ]] && echo "Awesome Job" || echo "Open up /tmp/authconfig.verify to see what you might have missed."`{{execute}}
+vim the full authconfig command you would run in `/file/authconfig.test` and run the following command to verify if the what you wrote is correct `file1=$(cat /root/authconfig.test); file2=$(cat /tmp/authconfig.verify) ; [[ $file1 == $file2 ]] && echo "Awesome Job" || echo "Open up /tmp/authconfig.verify to see what you might have missed."`{{execute}}
 
 **Objective 10 **
 Configure your NTP server to synchronize with `station.district.example.com`
@@ -28,7 +28,7 @@ Configure your NTP server to synchronize with `station.district.example.com`
 **Objective 11**
 You can use the user ldapuser(#) with the passwd "password". Home directories for your LDAP users should be automatically mounted on acces. These home directories are served from the NFS share "station.district.example.com:/home/guests/"
 
-verify by comparing your actions to the commands in this file: `cat /tmp/ldap.homedir`{{execute}}
+verify by comparing your actions to the commands in this file:`cat /tmp/ldap.homedir`{{execute}}
  
 **Objective 12**
 Add a repository `"http://district.example.com/repo/errata"` with the name `Kernel.repo`. Then check for a new kerenl and install if there is one. The newly installed kernel should be the default kernel and the previous kernel should be available and bootable at grub. 
