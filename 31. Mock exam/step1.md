@@ -38,5 +38,9 @@ Make sure that SELinux is set to enforcing mode
 
 Set hostname to "district.example.com" , set the static ip to 172.17.0.20 with a netmask of 255.255.255.0, a gateway of 172.17.0.254, and a DC of 172.17.0.254
 
+>>Q5: What do you need to do after running the nmcli commands?<<
+[*] take the connection down and bring it back up
+[*] restart the network service
+[ ] attempt to run access the resources you need
  
  
