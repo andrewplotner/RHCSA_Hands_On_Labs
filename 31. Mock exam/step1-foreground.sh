@@ -1,4 +1,4 @@
-
+setenforce 0
 echo 'authconfig --enable --enableauth --ldapserver=ldap://station.district.example.com --ldapbasedn="dc=station,dc=district,dc=example,dc=com" --enableldaptls
 --ldaploadcacert=https://classroom.example.com/pub/example-ca.crt --update' > /tmp/authconfig.verify
 
