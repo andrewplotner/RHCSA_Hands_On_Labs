@@ -15,7 +15,7 @@ RESET=$(tput sgr0)
 function print_color(){ 
 case $1 in
 "green")COLOR="\033[0;32m";;
-"red")COLOR="\033[0;32m";;
+"red")COLOR="\033[0;31m";;
 "NC")COLOR="\033[0m";;
 "*")COLOR="\033[0m";;
 esac
