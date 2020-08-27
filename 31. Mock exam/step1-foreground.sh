@@ -63,5 +63,4 @@ echo "NO" >> /usr/share/dict/words
 echo "NO" >> /usr/share/dict/words
 echo "NO" >> /usr/share/dict/words
 
-clear
 
