@@ -26,7 +26,7 @@ echo "Yes" >> /usr/share/dict/words
 echo "Yes" >> /usr/share/dict/words
 echo "Yes" >> /usr/share/dict/words
 echo "Yes" >> /usr/share/dict/words
-echo "Yes" >> /usr/share/dict/words
+echo "Hoorah" >> /usr/share/dict/words
 echo "Yes" >> /usr/share/dict/words
 echo "Yes" >> /usr/share/dict/words
 echo "Yes" >> /usr/share/dict/words
