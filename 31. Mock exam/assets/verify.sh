@@ -130,10 +130,10 @@ comparison 1 1 "11 Home-Dir self-checked"
 ##Objective 12
 
 YUM1=$( grep "http://district.example.com/repo/errata" -r /etc/yum.repos.d | awk -F= '{print $2}')
-comparison $YUM1 "http://district.example.com/repo/errata" "4"
+comparison $YUM1 "http://district.example.com/repo/errata" "12- YUM"
 
 KERNEL=$( grubby --default-index )
-comparison $KERNEL "2" "12" 
+comparison $KERNEL "2" "12-Kernel" 
 
 #
 ##Objective 13
