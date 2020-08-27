@@ -1,6 +1,5 @@
-<pre>
-
-Objective 1
+## Objective 1
+<pre> 
 Reboot and interrupt the boot sequence
 Select kernel and push e
 Add "rd.break" at the end of the linux16 line and before the init statement and press ctrl-X
@@ -11,12 +10,14 @@ Enter new password
 # touch /.autorelabel
 # exit
 # exit
- 
-Objective 2
+</pre> 
+## Objective 2
+<pre>
 # getenforce
 # setenforce 1
-
-Objective 3
+</pre> 
+## Objective 3
+<pre> 
 # vim /etc/sysconfig/network-scripts/(interface)
 Set everything up here
 # vim /etc/resolv.conf
