@@ -86,16 +86,16 @@ comparison $USER *harry* "6-Harry-sysadmin"
 USER=$( cat /etc/group | awk -F: '/sysadmin/ {print $4}')
 comparison $USER *susan* "6-Susan-sysadmin"
 
-NATASHA=$( cat /etc/passwd | awk -F: '/natasha/ {print $7})
+NATASHA=$( cat /etc/passwd | awk -F: '/natasha/ {print $7}')
 comparison $NATASHA "/sbin/nologin" "6-Natasha-nologin"
 
 #
 ##Objetive 7
 
-PERM=$( ll /var/tmp | awk '/fstab/ {print $1} )
+PERM=$( ls -l /var/tmp | awk '/fstab/ {print $1}' )
 comparison $PERM *r*-r*-r*-+ "7-Base Permissions"
 
-SPERM=$( getfacl /var/tmp/fstab | awk -F:'/susan/ {print $3}' )
+SPERM=$( getfacl /var/tmp/fstab | awk -F: '/susan/ {print $3}' )
 comparison $SPERM "---" "7-Susan Permissions" 
 
 NPERM=$( getfacl /var/tmp/fstab | awk -F: '/natasha/ {print $3}')
@@ -104,10 +104,10 @@ comparison $NPERM "rw-" "7- Natasha Permissions"
 #
 ##Objective 8
 
-SBITS=$( ll / | awk '/data/ {print $1} )
+SBITS=$( ls -l / | awk '/data/ {print $1}' )
 comparison $SBITS d---rws---* "8- Special Bits"
 
-GOWN=$( ll / | awk '/data/ {print $4}' )
+GOWN=$( ls -l / | awk '/data/ {print $4}' )
 comparison $GOWN sysadmin "8- Group ownership"
 
 #
@@ -122,8 +122,7 @@ NTP=$( grep "station.district.example.com" /etc/chrony.conf | awk '{print $1} ' 
 comparison $NTP "server" "10"
 
 #
-#
-Objective 11
+##Objective 11
 
 comparison 1 1 "11 Home-Dir self-checked"
 
