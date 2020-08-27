@@ -166,7 +166,7 @@ comparison $JANEUID "*3564*" "16"
 #
 ##Objective 17
 
-FIND=$( ls /hom/lost+found )
+FIND=$( ls /home/lost+found )
 
 comparison $FIND *file3* "17"
 
