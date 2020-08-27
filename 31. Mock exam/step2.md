@@ -62,7 +62,7 @@ verify by comparing your actions to the commands in this file:`cat /tmp/ldap.hom
 </pre>
 **<pre>Objective 22</pre>**
 <pre>Search for text `strato` in a file /usr/share/dict/words and copy this to a file /root/lines.txt. The new file should not have any blank spaces or lines. The order of the names in the new file should be the same as the original file. </pre>
-Run the verification to confirm objectives 1-22 have been accomplished before proceeding to objective 23 as it may break the box. `bash /tmp/verifyscript`{{execute}}
+Run the verification to confirm objectives 1-22 have been accomplished before proceeding to objective 23 as it may break the box. `bash /tmp/verify.sh`{{execute}}
 **<pre>Objective 23</pre>**
 <pre>reduce the rhel-root lvm to 30G, create a 7G lvm named vdo and place a 15GB vdo named lucky onto the LVM. Then give the VDO an XFS file system and mount it persistently to /mnt/vdo
 </pre>
