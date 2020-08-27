@@ -42,19 +42,19 @@ verify by comparing your actions to the commands in this file:`cat /tmp/ldap.hom
 **<pre>Objective 15 </pre>**
 <pre>Synchronize the `/etc` directory tree to the `/configbackup` directory  A) create an archive named `/root/configuration-backup-server.tar.gz` with the `/configbackup` directory as content. Extract the contents of the  `/root/configuration-backup-server.tar.gz` to the `/tmp/configcompare` directory.  B) create an archive `/root/archive.tar.bz2` with the `/usr/local directory` as content. 
 </pre>
-**<pre>Objective 16</pre> **
+**<pre>Objective 16</pre>**
 <pre>Add a user `jean` with user id of `3564`
 </pre>
-**<pre>Objective 17 </pre>**
+**<pre>Objective 17</pre>**
 <pre>Locate all files owned by the user `sasha` and copy them to `/home/lost+found/`
 </pre>
-**<pre>Objective 18 </pre>**
+**<pre>Objective 18</pre>**
 <pre>Create a Logical volume lvmgroup from the volume group rhel. The logical volume should have 100 extents. Mount this lvm as /mnt/lvm2 as an ext4 filesystem. 
 </pre>
-**<pre>Objective 19</pre> **
+**<pre>Objective 19</pre>**
 <pre>Display the first 12 lines of the /usr/share/dict/words and send the output to the /home/student/headtail.txt file
  </pre>
-**<pre>Objective 20</pre> **
+**<pre>Objective 20</pre>**
 <pre>Record the command to display all systemd jounral entries recorded between 9:05:00 and 9:15:00 in the /home/student/systemdreview.txt
  </pre>
 **<pre>Objective 21</pre>** 
