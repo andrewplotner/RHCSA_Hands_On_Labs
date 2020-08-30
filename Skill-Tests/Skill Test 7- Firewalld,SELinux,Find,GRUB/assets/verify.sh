@@ -53,9 +53,9 @@ CURLCHECK=$( ls -Z /var/web | cut -d: -f3 )
 
 comparison $CURLCHECK "httpd_sys_content_t" "3"
 
-FCHECK=$( cat /root/old-files | grep "/rpc" )
+FCHECK=$( cat /root/old-files | grep "/fonts" )
 
-comparison $FCHECK "/etc/rpc" "4"
+comparison $FCHECK "/etc/fonts" "4"
 
 GCHECK=$( cat /boot/grub2/grub.cfg | grep "timeout=15" | awk '{print $2}' )
 VERIFY=$( echo $GCHECK | awk '{print $1}' )
