@@ -1,5 +1,5 @@
 {
-    "title": "2. Exercise- Locate and Find",
+    "title": "centos-2. Exercise- Locate and Find",
     "description": "To introduce users to the locate and find utilities",
     "noindex": true,
     "details": {
@@ -38,6 +38,6 @@
         "uilayout": "terminal"
     },
     "backend": {
-        "imageid": "ubuntu:2004"
+        "imageid": "centos"
     }
 }
