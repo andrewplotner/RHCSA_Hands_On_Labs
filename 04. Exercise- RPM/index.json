@@ -27,6 +27,6 @@
         "uilayout": "terminal"
     },
     "backend": {
-        "imageid": "centos"
+        "imageid": "ubuntu:2004"
     }
 }
