@@ -1,0 +1,63 @@
+{
+  "variables": {
+    "rhsm_user": "{{env `RHSM_USER`}}",
+    "rhsm_pass": "{{env `RHSM_PASS`}}",
+    "target":  "rhel8"
+  },
+  "sensitive-variables": ["rhsm_user","rhsm_pass"],
+  "builders":
+  [
+    {
+      "type": "qemu",
+      "accelerator": "kvm",
+      "headless": true,
+      "qemu_binary": "/usr/libexec/qemu-kvm",
+      "qemuargs": [
+        [ "-m", "2048M" ],
+        [ "-smp", "cpus=1,maxcpus=16,cores=4" ]
+      ],
+      "disk_interface": "virtio",
+      "disk_size": 8192,
+      "format": "qcow2",
+      "net_device": "virtio-net",
+
+      "iso_url": "/home/mmicene/VirtualMachines/rhel-8.0-x86_64-dvd.iso",
+      "iso_checksum": "8a0bca1c323ad8628b09d0a7cce43f39",
+      "iso_checksum_type": "md5",
+
+      "vm_name": "rhel-8.0-katacoda-base",
+
+      "http_directory": "http",
+
+      "ssh_username": "packer",
+      "ssh_password": "redhat1",
+      "ssh_wait_timeout": "1200s",
+
+      "boot_wait": "15s",
+      "boot_command": [
+        "<tab><wait> text ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/rhel8.cfg<enter><wait>"
+      ],
+
+      "shutdown_command": "sudo shutdown -P now"
+    }
+  ],
+
+  "provisioners":
+  [
+    {
+      "type": "shell",
+      "pause_before": "5s",
+      "execute_command": "chmod +x {{ .Path }};sudo {{ .Vars }} {{ .Path }}",
+      "environment_vars": [
+        "RHSM_USER={{user `rhsm_user`}}",
+        "RHSM_PASS={{user `rhsm_pass`}}"
+        ],
+      "scripts": [
+        "environments/{{user `target`}}/build/1_enablerepos.sh",
+        "environments/{{user `target`}}/build/2_configure-standalone.sh",
+        "environments/{{user `target`}}/build/3_packages.sh",
+        "environments/{{user `target`}}/build/4_httpd.sh"
+      ]
+    }
+  ]
+}
