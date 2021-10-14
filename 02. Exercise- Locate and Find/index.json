@@ -38,6 +38,6 @@
         "uilayout": "terminal"
     },
     "backend": {
-        "imageid": "fedora"
+        "imageid": "ubuntu:2004"
     }
 }
