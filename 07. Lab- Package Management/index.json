@@ -35,6 +35,6 @@
         "uilayout": "terminal"
     },
     "backend": {
-        "imageid": "centos"
+        "imageid": "rhel8-3"
     }
 }
