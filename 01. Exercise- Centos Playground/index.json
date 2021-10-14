@@ -1,6 +1,6 @@
 {
     "noindex": true,
-    "title": "1. Rhel 8 playground",
+    "title": "1. Ubuntu playground",
     "description": "Playground Terminal to test out and learn the basic linux commands",
     "details": {
         "steps": [
@@ -19,6 +19,6 @@
         "uilayout": "terminal"
     },
     "backend": {
-        "imageid": "centos"
+        "imageid": "ubuntu:2004"
     }
 }
