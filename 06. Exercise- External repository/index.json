@@ -41,6 +41,6 @@
         "uilayout": "terminal"
     },
     "backend": {
-        "imageid": "rhel"
+        "imageid": "rhel8-4"
     }
 }
