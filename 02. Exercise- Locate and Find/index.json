@@ -38,6 +38,6 @@
         "uilayout": "terminal"
     },
     "backend": {
-        "imageid": "centos"
+        "imageid": "centos8"
     }
 }
